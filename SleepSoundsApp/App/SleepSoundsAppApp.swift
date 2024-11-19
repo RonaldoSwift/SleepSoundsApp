@@ -9,9 +9,20 @@ import SwiftUI
 
 @main
 struct SleepSoundsAppApp: App {
+    
+    @StateObject private var appRootManager = AppRootManager()
+    
     var body: some Scene {
         WindowGroup {
-            SplashView()
+            Group {
+                switch appRootManager.currentRoot {
+                case .splash:
+                    SplashRootView()
+                case .slider:
+                    SliderRootView()
+                }
+            }
+            .environmentObject(appRootManager)
         }
     }
 }
