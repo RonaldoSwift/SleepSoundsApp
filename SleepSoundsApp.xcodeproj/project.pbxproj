@@ -27,6 +27,8 @@
 		FA91F8932CED343C0004AC6D /* SF-Pro-Rounded-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = FA91F8862CED343C0004AC6D /* SF-Pro-Rounded-Heavy.otf */; };
 		FA91F8942CED343C0004AC6D /* SF-Pro-Rounded-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FA91F88A2CED343C0004AC6D /* SF-Pro-Rounded-Semibold.otf */; };
 		FA91F8952CED343C0004AC6D /* SF-Pro-Rounded-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = FA91F88B2CED343C0004AC6D /* SF-Pro-Rounded-Thin.otf */; };
+		FA91F8992CED55560004AC6D /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91F8982CED55560004AC6D /* DiscoverView.swift */; };
+		FA91F89C2CED62FE0004AC6D /* CustomTabIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91F89B2CED62FE0004AC6D /* CustomTabIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		FA91F88B2CED343C0004AC6D /* SF-Pro-Rounded-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Thin.otf"; sourceTree = "<group>"; };
 		FA91F88C2CED343C0004AC6D /* SF-Pro-Rounded-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Ultralight.otf"; sourceTree = "<group>"; };
 		FA91F8962CED34F00004AC6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FA91F8982CED55560004AC6D /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
+		FA91F89B2CED62FE0004AC6D /* CustomTabIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabIndicator.swift; sourceTree = "<group>"; };
 		FAC7A0D12CEC18EC008ECFDE /* SleepSoundsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepSoundsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -97,9 +101,9 @@
 		FA1B3AB42CECD9E700E4A997 /* SleepSoundsApp */ = {
 			isa = PBXGroup;
 			children = (
+				FA1B3ABA2CECDC8600E4A997 /* App */,
 				FA91F8962CED34F00004AC6D /* Info.plist */,
 				FA91F8822CED336F0004AC6D /* Resources */,
-				FA1B3ABA2CECDC8600E4A997 /* App */,
 				FA1B3ABB2CECDDA900E4A997 /* Presentation */,
 				FA1B3AB02CECD9E700E4A997 /* Preview Content */,
 				FA1B3ABF2CECDEC800E4A997 /* Assets */,
@@ -120,6 +124,7 @@
 		FA1B3ABB2CECDDA900E4A997 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				FA91F8972CED55460004AC6D /* Discover */,
 				FA91F87F2CECEF450004AC6D /* Slider */,
 				FA1B3ABC2CECDDBE00E4A997 /* Splash */,
 			);
@@ -172,6 +177,7 @@
 		FA91F87F2CECEF450004AC6D /* Slider */ = {
 			isa = PBXGroup;
 			children = (
+				FA91F89A2CED62C40004AC6D /* Componente */,
 				FA91F8802CECEF5B0004AC6D /* SliderView.swift */,
 			);
 			path = Slider;
@@ -199,6 +205,22 @@
 				FA91F88C2CED343C0004AC6D /* SF-Pro-Rounded-Ultralight.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FA91F8972CED55460004AC6D /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				FA91F8982CED55560004AC6D /* DiscoverView.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		FA91F89A2CED62C40004AC6D /* Componente */ = {
+			isa = PBXGroup;
+			children = (
+				FA91F89B2CED62FE0004AC6D /* CustomTabIndicator.swift */,
+			);
+			path = Componente;
 			sourceTree = "<group>";
 		};
 		FAC7A0C82CEC18EC008ECFDE = {
@@ -331,6 +353,8 @@
 				FA1B3ABE2CECDE4100E4A997 /* SplashView.swift in Sources */,
 				FA91F87E2CECED650004AC6D /* SliderRootView.swift in Sources */,
 				FA91F8782CECEC400004AC6D /* View+Extension.swift in Sources */,
+				FA91F8992CED55560004AC6D /* DiscoverView.swift in Sources */,
+				FA91F89C2CED62FE0004AC6D /* CustomTabIndicator.swift in Sources */,
 				FA91F8762CECEBA50004AC6D /* NavigationModifier.swift in Sources */,
 				FA91F8722CECE9710004AC6D /* AppRootManager.swift in Sources */,
 				FA91F87C2CECECFD0004AC6D /* SplashRootView.swift in Sources */,

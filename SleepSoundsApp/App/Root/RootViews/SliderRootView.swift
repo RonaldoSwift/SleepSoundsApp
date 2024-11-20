@@ -8,9 +8,22 @@
 import SwiftUI
 
 struct SliderRootView: View {
+    
+    @State var isActiveButtonStart: Bool = false
+    @State var isActiveLoginApple: Bool = false
+    
     var body: some View {
-        //Aca colocaremos la pantalla slider para que navgue y el View tambien
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            SliderView(
+                onClickStart: {
+                    isActiveButtonStart = true
+                }, onClickLoginApple: {
+                    isActiveLoginApple = true
+                }
+            )
+            .navigation(DiscoverView(),$isActiveButtonStart)
+            .navigation(DiscoverView(),$isActiveLoginApple)
+        }
     }
 }
 
