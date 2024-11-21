@@ -9,20 +9,17 @@ import SwiftUI
 
 struct SliderRootView: View {
     
-    @State var isActiveButtonStart: Bool = false
-    @State var isActiveLoginApple: Bool = false
+    @EnvironmentObject var appRootManager: AppRootManager
     
     var body: some View {
         NavigationView {
             SliderView(
                 onClickStart: {
-                    isActiveButtonStart = true
+                    appRootManager.currentRoot = .menu
                 }, onClickLoginApple: {
-                    isActiveLoginApple = true
+                    appRootManager.currentRoot = .menu
                 }
             )
-            .navigation(DiscoverView(),$isActiveButtonStart)
-            .navigation(DiscoverView(),$isActiveLoginApple)
         }
     }
 }

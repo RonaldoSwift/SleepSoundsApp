@@ -20,6 +20,8 @@ struct SleepSoundsAppApp: App {
                     SplashRootView()
                 case .slider:
                     SliderRootView()
+                case .menu:
+                    MenuRootView()
                 }
             }
             .environmentObject(appRootManager)

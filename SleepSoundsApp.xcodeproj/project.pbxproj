@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		18053639D57CBDB3AE2A5C92 /* Pods_SleepSoundsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B0BED4262C03E82A174740 /* Pods_SleepSoundsApp.framework */; };
+		FA0822512CEE2FEE00386BE5 /* MenuRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0822502CEE2FEE00386BE5 /* MenuRootView.swift */; };
+		FA0822542CEE300600386BE5 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0822532CEE300600386BE5 /* MenuView.swift */; };
+		FA0822592CEE372A00386BE5 /* WebServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0822582CEE372A00386BE5 /* WebServiceAPI.swift */; };
+		FA08225B2CEE373C00386BE5 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA08225A2CEE373C00386BE5 /* ErrorResponse.swift */; };
+		FA08225E2CEE972000386BE5 /* GetObtenerListaDeMusicaDiscoverResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA08225D2CEE972000386BE5 /* GetObtenerListaDeMusicaDiscoverResponse.swift */; };
+		FA0822622CEEB2A600386BE5 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0822612CEEB2A600386BE5 /* Repository.swift */; };
+		FA0822642CEEB3AE00386BE5 /* Musica.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0822632CEEB3AE00386BE5 /* Musica.swift */; };
+		FA0822662CEEB7CF00386BE5 /* DiscoverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0822652CEEB7CF00386BE5 /* DiscoverViewModel.swift */; };
+		FA0822682CEEB8A700386BE5 /* DiscoverUiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0822672CEEB8A700386BE5 /* DiscoverUiState.swift */; };
+		FA08226B2CEEC71300386BE5 /* MusicaCardComponente.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA08226A2CEEC71300386BE5 /* MusicaCardComponente.swift */; };
+		FA08226D2CEED52700386BE5 /* CategoriaDiscover.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA08226C2CEED52700386BE5 /* CategoriaDiscover.swift */; };
 		FA1B3AB52CECD9E700E4A997 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA1B3AAF2CECD9E700E4A997 /* Preview Assets.xcassets */; };
 		FA1B3AB62CECD9E700E4A997 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA1B3AB12CECD9E700E4A997 /* Assets.xcassets */; };
 		FA1B3AB82CECD9E700E4A997 /* SleepSoundsAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1B3AB32CECD9E700E4A997 /* SleepSoundsAppApp.swift */; };
@@ -35,6 +46,17 @@
 		B455259E57626F986E264F70 /* Pods-SleepSoundsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepSoundsApp.release.xcconfig"; path = "Target Support Files/Pods-SleepSoundsApp/Pods-SleepSoundsApp.release.xcconfig"; sourceTree = "<group>"; };
 		E0B0BED4262C03E82A174740 /* Pods_SleepSoundsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SleepSoundsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA89122658D739161EFD7644 /* Pods-SleepSoundsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepSoundsApp.debug.xcconfig"; path = "Target Support Files/Pods-SleepSoundsApp/Pods-SleepSoundsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		FA0822502CEE2FEE00386BE5 /* MenuRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRootView.swift; sourceTree = "<group>"; };
+		FA0822532CEE300600386BE5 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		FA0822582CEE372A00386BE5 /* WebServiceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceAPI.swift; sourceTree = "<group>"; };
+		FA08225A2CEE373C00386BE5 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		FA08225D2CEE972000386BE5 /* GetObtenerListaDeMusicaDiscoverResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetObtenerListaDeMusicaDiscoverResponse.swift; sourceTree = "<group>"; };
+		FA0822612CEEB2A600386BE5 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		FA0822632CEEB3AE00386BE5 /* Musica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Musica.swift; sourceTree = "<group>"; };
+		FA0822652CEEB7CF00386BE5 /* DiscoverViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewModel.swift; sourceTree = "<group>"; };
+		FA0822672CEEB8A700386BE5 /* DiscoverUiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverUiState.swift; sourceTree = "<group>"; };
+		FA08226A2CEEC71300386BE5 /* MusicaCardComponente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicaCardComponente.swift; sourceTree = "<group>"; };
+		FA08226C2CEED52700386BE5 /* CategoriaDiscover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaDiscover.swift; sourceTree = "<group>"; };
 		FA1B3AAF2CECD9E700E4A997 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FA1B3AB12CECD9E700E4A997 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA1B3AB32CECD9E700E4A997 /* SleepSoundsAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepSoundsAppApp.swift; sourceTree = "<group>"; };
@@ -55,7 +77,7 @@
 		FA91F88A2CED343C0004AC6D /* SF-Pro-Rounded-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Semibold.otf"; sourceTree = "<group>"; };
 		FA91F88B2CED343C0004AC6D /* SF-Pro-Rounded-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Thin.otf"; sourceTree = "<group>"; };
 		FA91F88C2CED343C0004AC6D /* SF-Pro-Rounded-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Ultralight.otf"; sourceTree = "<group>"; };
-		FA91F8962CED34F00004AC6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FA91F8962CED34F00004AC6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA91F8982CED55560004AC6D /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
 		FA91F89B2CED62FE0004AC6D /* CustomTabIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabIndicator.swift; sourceTree = "<group>"; };
 		FAC7A0D12CEC18EC008ECFDE /* SleepSoundsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepSoundsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +112,74 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FA0822522CEE2FF900386BE5 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				FA0822532CEE300600386BE5 /* MenuView.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		FA0822552CEE36A300386BE5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FA08225C2CEE96B100386BE5 /* Response */,
+				FA0822572CEE370300386BE5 /* WebService */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		FA0822562CEE36AA00386BE5 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				FA0822602CEEB28F00386BE5 /* Modelo */,
+				FA08225F2CEEB28100386BE5 /* Repository */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		FA0822572CEE370300386BE5 /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				FA0822582CEE372A00386BE5 /* WebServiceAPI.swift */,
+				FA08225A2CEE373C00386BE5 /* ErrorResponse.swift */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		FA08225C2CEE96B100386BE5 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				FA08225D2CEE972000386BE5 /* GetObtenerListaDeMusicaDiscoverResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		FA08225F2CEEB28100386BE5 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				FA0822612CEEB2A600386BE5 /* Repository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		FA0822602CEEB28F00386BE5 /* Modelo */ = {
+			isa = PBXGroup;
+			children = (
+				FA0822632CEEB3AE00386BE5 /* Musica.swift */,
+			);
+			path = Modelo;
+			sourceTree = "<group>";
+		};
+		FA0822692CEEC6E400386BE5 /* Componente */ = {
+			isa = PBXGroup;
+			children = (
+				FA08226A2CEEC71300386BE5 /* MusicaCardComponente.swift */,
+				FA08226C2CEED52700386BE5 /* CategoriaDiscover.swift */,
+			);
+			path = Componente;
+			sourceTree = "<group>";
+		};
 		FA1B3AB02CECD9E700E4A997 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +195,8 @@
 				FA91F8962CED34F00004AC6D /* Info.plist */,
 				FA91F8822CED336F0004AC6D /* Resources */,
 				FA1B3ABB2CECDDA900E4A997 /* Presentation */,
+				FA0822562CEE36AA00386BE5 /* Domain */,
+				FA0822552CEE36A300386BE5 /* Data */,
 				FA1B3AB02CECD9E700E4A997 /* Preview Content */,
 				FA1B3ABF2CECDEC800E4A997 /* Assets */,
 			);
@@ -124,6 +216,7 @@
 		FA1B3ABB2CECDDA900E4A997 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				FA0822522CEE2FF900386BE5 /* Menu */,
 				FA91F8972CED55460004AC6D /* Discover */,
 				FA91F87F2CECEF450004AC6D /* Slider */,
 				FA1B3ABC2CECDDBE00E4A997 /* Splash */,
@@ -150,8 +243,8 @@
 		FA91F8702CECE9210004AC6D /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				FA91F8732CECE9810004AC6D /* RootViews */,
 				FA91F8712CECE9710004AC6D /* AppRootManager.swift */,
+				FA91F8732CECE9810004AC6D /* RootViews */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -161,6 +254,7 @@
 			children = (
 				FA91F87B2CECECFD0004AC6D /* SplashRootView.swift */,
 				FA91F87D2CECED650004AC6D /* SliderRootView.swift */,
+				FA0822502CEE2FEE00386BE5 /* MenuRootView.swift */,
 			);
 			path = RootViews;
 			sourceTree = "<group>";
@@ -210,7 +304,10 @@
 		FA91F8972CED55460004AC6D /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				FA0822692CEEC6E400386BE5 /* Componente */,
 				FA91F8982CED55560004AC6D /* DiscoverView.swift */,
+				FA0822652CEEB7CF00386BE5 /* DiscoverViewModel.swift */,
+				FA0822672CEEB8A700386BE5 /* DiscoverUiState.swift */,
 			);
 			path = Discover;
 			sourceTree = "<group>";
@@ -253,6 +350,7 @@
 				FAC7A0CD2CEC18EC008ECFDE /* Sources */,
 				FAC7A0CE2CEC18EC008ECFDE /* Frameworks */,
 				FAC7A0CF2CEC18EC008ECFDE /* Resources */,
+				EAADFB9E4CC1094AC509ADD0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -341,6 +439,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		EAADFB9E4CC1094AC509ADD0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SleepSoundsApp/Pods-SleepSoundsApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SleepSoundsApp/Pods-SleepSoundsApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SleepSoundsApp/Pods-SleepSoundsApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -348,16 +463,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA0822682CEEB8A700386BE5 /* DiscoverUiState.swift in Sources */,
+				FA08226B2CEEC71300386BE5 /* MusicaCardComponente.swift in Sources */,
 				FA1B3AB82CECD9E700E4A997 /* SleepSoundsAppApp.swift in Sources */,
+				FA0822542CEE300600386BE5 /* MenuView.swift in Sources */,
 				FA91F8812CECEF5B0004AC6D /* SliderView.swift in Sources */,
+				FA0822662CEEB7CF00386BE5 /* DiscoverViewModel.swift in Sources */,
 				FA1B3ABE2CECDE4100E4A997 /* SplashView.swift in Sources */,
+				FA08225E2CEE972000386BE5 /* GetObtenerListaDeMusicaDiscoverResponse.swift in Sources */,
+				FA0822512CEE2FEE00386BE5 /* MenuRootView.swift in Sources */,
 				FA91F87E2CECED650004AC6D /* SliderRootView.swift in Sources */,
+				FA0822642CEEB3AE00386BE5 /* Musica.swift in Sources */,
 				FA91F8782CECEC400004AC6D /* View+Extension.swift in Sources */,
+				FA0822592CEE372A00386BE5 /* WebServiceAPI.swift in Sources */,
 				FA91F8992CED55560004AC6D /* DiscoverView.swift in Sources */,
+				FA08226D2CEED52700386BE5 /* CategoriaDiscover.swift in Sources */,
 				FA91F89C2CED62FE0004AC6D /* CustomTabIndicator.swift in Sources */,
+				FA0822622CEEB2A600386BE5 /* Repository.swift in Sources */,
 				FA91F8762CECEBA50004AC6D /* NavigationModifier.swift in Sources */,
 				FA91F8722CECE9710004AC6D /* AppRootManager.swift in Sources */,
 				FA91F87C2CECECFD0004AC6D /* SplashRootView.swift in Sources */,
+				FA08225B2CEE373C00386BE5 /* ErrorResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +619,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SleepSoundsApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SleepSoundsApp/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
@@ -529,6 +656,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SleepSoundsApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SleepSoundsApp/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";

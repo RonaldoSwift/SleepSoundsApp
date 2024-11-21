@@ -14,5 +14,6 @@ final class AppRootManager: ObservableObject {
     enum AppRoots {
         case splash
         case slider
+        case menu
     }
 }
