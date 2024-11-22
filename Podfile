@@ -6,5 +6,6 @@ target 'SleepSoundsApp' do
   use_frameworks!
 
   # Pods for SleepSoundsApp
+  pod 'SDWebImageSwiftUI'
 
 end
