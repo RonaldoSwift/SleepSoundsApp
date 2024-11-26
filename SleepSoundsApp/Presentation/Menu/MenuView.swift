@@ -1,24 +1,28 @@
-//
-//  MenuView.swift
-//  SleepSoundsApp
-//
-//  Created by Ronaldo Andre on 20/11/24.
-//
-
 import SwiftUI
 
 struct MenuView: View {
+    
+    init() {
+        let appearance = UITabBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = UIColor(Color.colorFondo)
+        
+        UITabBar.appearance().standardAppearance = appearance
+        UITabBar.appearance().scrollEdgeAppearance = appearance
+    }
+    
     var body: some View {
         TabView {
             DiscoverView(
-                onClickEnCardMusic: {},
+                onClickEnCardPaquete: {},
                 onClickEnButtonPlay: {}
             )
-                .tabItem{
-                    Image(systemName: "moon.stars")
-                    Text("Discover")
-                }
+            .tabItem {
+                Image(systemName: "moon.stars")
+                Text("Discover")
+            }
         }
+        .background(Color.colorFondo.ignoresSafeArea()) // Color de fondo adicional
     }
 }
 

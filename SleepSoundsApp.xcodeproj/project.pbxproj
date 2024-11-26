@@ -12,9 +12,9 @@
 		FA0822542CEE300600386BE5 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0822532CEE300600386BE5 /* MenuView.swift */; };
 		FA0822592CEE372A00386BE5 /* WebServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0822582CEE372A00386BE5 /* WebServiceAPI.swift */; };
 		FA08225B2CEE373C00386BE5 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA08225A2CEE373C00386BE5 /* ErrorResponse.swift */; };
-		FA08225E2CEE972000386BE5 /* GetObtenerListaDeMusicaDiscoverResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA08225D2CEE972000386BE5 /* GetObtenerListaDeMusicaDiscoverResponse.swift */; };
+		FA08225E2CEE972000386BE5 /* GetObtenerListaDePaqueteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA08225D2CEE972000386BE5 /* GetObtenerListaDePaqueteResponse.swift */; };
 		FA0822622CEEB2A600386BE5 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0822612CEEB2A600386BE5 /* Repository.swift */; };
-		FA0822642CEEB3AE00386BE5 /* Musica.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0822632CEEB3AE00386BE5 /* Musica.swift */; };
+		FA0822642CEEB3AE00386BE5 /* Paquete.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0822632CEEB3AE00386BE5 /* Paquete.swift */; };
 		FA0822662CEEB7CF00386BE5 /* DiscoverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0822652CEEB7CF00386BE5 /* DiscoverViewModel.swift */; };
 		FA0822682CEEB8A700386BE5 /* DiscoverUiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0822672CEEB8A700386BE5 /* DiscoverUiState.swift */; };
 		FA08226B2CEEC71300386BE5 /* MusicaCardComponente.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA08226A2CEEC71300386BE5 /* MusicaCardComponente.swift */; };
@@ -50,9 +50,9 @@
 		FA0822532CEE300600386BE5 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		FA0822582CEE372A00386BE5 /* WebServiceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceAPI.swift; sourceTree = "<group>"; };
 		FA08225A2CEE373C00386BE5 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
-		FA08225D2CEE972000386BE5 /* GetObtenerListaDeMusicaDiscoverResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetObtenerListaDeMusicaDiscoverResponse.swift; sourceTree = "<group>"; };
+		FA08225D2CEE972000386BE5 /* GetObtenerListaDePaqueteResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetObtenerListaDePaqueteResponse.swift; sourceTree = "<group>"; };
 		FA0822612CEEB2A600386BE5 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
-		FA0822632CEEB3AE00386BE5 /* Musica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Musica.swift; sourceTree = "<group>"; };
+		FA0822632CEEB3AE00386BE5 /* Paquete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paquete.swift; sourceTree = "<group>"; };
 		FA0822652CEEB7CF00386BE5 /* DiscoverViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewModel.swift; sourceTree = "<group>"; };
 		FA0822672CEEB8A700386BE5 /* DiscoverUiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverUiState.swift; sourceTree = "<group>"; };
 		FA08226A2CEEC71300386BE5 /* MusicaCardComponente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicaCardComponente.swift; sourceTree = "<group>"; };
@@ -150,7 +150,7 @@
 		FA08225C2CEE96B100386BE5 /* Response */ = {
 			isa = PBXGroup;
 			children = (
-				FA08225D2CEE972000386BE5 /* GetObtenerListaDeMusicaDiscoverResponse.swift */,
+				FA08225D2CEE972000386BE5 /* GetObtenerListaDePaqueteResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -166,7 +166,7 @@
 		FA0822602CEEB28F00386BE5 /* Modelo */ = {
 			isa = PBXGroup;
 			children = (
-				FA0822632CEEB3AE00386BE5 /* Musica.swift */,
+				FA0822632CEEB3AE00386BE5 /* Paquete.swift */,
 			);
 			path = Modelo;
 			sourceTree = "<group>";
@@ -470,10 +470,10 @@
 				FA91F8812CECEF5B0004AC6D /* SliderView.swift in Sources */,
 				FA0822662CEEB7CF00386BE5 /* DiscoverViewModel.swift in Sources */,
 				FA1B3ABE2CECDE4100E4A997 /* SplashView.swift in Sources */,
-				FA08225E2CEE972000386BE5 /* GetObtenerListaDeMusicaDiscoverResponse.swift in Sources */,
+				FA08225E2CEE972000386BE5 /* GetObtenerListaDePaqueteResponse.swift in Sources */,
 				FA0822512CEE2FEE00386BE5 /* MenuRootView.swift in Sources */,
 				FA91F87E2CECED650004AC6D /* SliderRootView.swift in Sources */,
-				FA0822642CEEB3AE00386BE5 /* Musica.swift in Sources */,
+				FA0822642CEEB3AE00386BE5 /* Paquete.swift in Sources */,
 				FA91F8782CECEC400004AC6D /* View+Extension.swift in Sources */,
 				FA0822592CEE372A00386BE5 /* WebServiceAPI.swift in Sources */,
 				FA91F8992CED55560004AC6D /* DiscoverView.swift in Sources */,

@@ -33,7 +33,7 @@ final class DiscoverViewModel: ObservableObject{
                 case .failure(let error):
                     self.discoverUiState = DiscoverUiState.error("Ocurrio un error \(error)")
                 }
-            }, receiveValue: { (musica:[Musica]) in
+            }, receiveValue: { (musica:[Paquete]) in
                 self.discoverUiState = DiscoverUiState.success(musica)
             })
             .store(in: &cancelLables)

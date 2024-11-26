@@ -16,14 +16,14 @@ struct DiscoverView: View {
         )
     )
     
-    var onClickEnCardMusic: () -> Void
+    var onClickEnCardPaquete: () -> Void
     var onClickEnButtonPlay: () -> Void
     
     @State private var showLoadingMusica: Bool = false
     @State private var showAlert: Bool = false
     @State private var mensajeDeAlerta: String = ""
     @State private var tituloDeAlerta: String = "Error"
-    @State private var arrayDeMusicas: [Musica] = []
+    @State private var arrayDeMusicas: [Paquete] = []
     
     var body: some View {
         NavigationView {
@@ -47,12 +47,12 @@ struct DiscoverView: View {
                     else {
                         MusicaCardComponente(
                             onClickInCardMusica: {
-                                onClickEnCardMusic()
+                                onClickEnCardPaquete()
                             },
                             onClickInPlay: {
                                 onClickEnButtonPlay()
                             },
-                            arrayDeMusicas: arrayDeMusicas
+                            arrayDePaquetes: arrayDeMusicas
                         )
                     }
                 }
@@ -91,7 +91,7 @@ struct DiscoverView: View {
 
 #Preview {
     DiscoverView(
-        onClickEnCardMusic: {},
+        onClickEnCardPaquete: {},
         onClickEnButtonPlay: {}
     )
 }

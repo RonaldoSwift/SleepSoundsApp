@@ -1,10 +1,3 @@
-//
-//  SliderView.swift
-//  SleepSoundsApp
-//
-//  Created by Ronaldo Andre on 19/11/24.
-//
-
 import SwiftUI
 
 struct SliderView: View {
@@ -13,27 +6,30 @@ struct SliderView: View {
     var onClickLoginApple: () -> Void
     
     @State private var currentIndex: Int = 1
+    @State private var shouldNavigateToNextView: Bool = false
     
     var body: some View {
         VStack {
             TabView(selection: $currentIndex) {
-                ForEach(1...3,id: \.self) { index in
+                ForEach(1...3, id: \.self) { index in
                     VStack {
                         Image("pic\(index)")
                             .resizable()
+                            .scaledToFit()
                             .aspectRatio(contentMode: .fit)
+                            .frame(width: 300, height: 290)
                             .padding(.horizontal, 20)
                         Text("Exclusive sounds")
                             .font(.largeTitle)
                             .fontWeight(.heavy)
                             .foregroundColor(.white)
-                            .padding(.top,20)
+                            .padding(.top, 20)
                         Text("We have an author's library of sounds that you will not find anywhere else")
                             .font(.system(size: 17, weight: .light))
                             .foregroundColor(Color.colorTextSlider)
                             .multilineTextAlignment(.center)
                             .padding(.horizontal)
-                            .padding(.top,10)
+                            .padding(.bottom, 5)
                     }
                     .tag(index)
                 }
@@ -41,12 +37,21 @@ struct SliderView: View {
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
             
             CustomTabIndicator(count: 3, current: $currentIndex)
-                .padding(.bottom,25)
+                .padding(.bottom, 30)
             
             Button {
-                onClickStart()
+                if currentIndex < 3 {
+                    // Avanza al siguiente índice
+                    withAnimation {
+                        currentIndex += 1
+                    }
+                } else {
+                    // Cambia a la siguiente vista
+                    shouldNavigateToNextView = true
+                    onClickStart()
+                }
             } label: {
-                Text("Next")
+                Text(currentIndex == 3 ? "Start" : "Next")
                     .font(.headline)
                     .foregroundColor(.white)
                     .padding()
@@ -54,7 +59,7 @@ struct SliderView: View {
                     .background(Capsule().fill(Color.colorBoton))
                     .padding(.horizontal, 20)
             }
-            .padding(.bottom,25)
+            .padding(.bottom, 25)
             
             Button {
                 onClickLoginApple()
@@ -66,7 +71,7 @@ struct SliderView: View {
                 .font(.headline)
                 .foregroundColor(.white)
             }
-            .padding(.bottom,35)
+            .padding(.bottom, 50)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color(ColorResource.colorFondo).ignoresSafeArea())

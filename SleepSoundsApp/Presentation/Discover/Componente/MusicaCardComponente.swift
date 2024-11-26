@@ -13,19 +13,19 @@ struct MusicaCardComponente: View {
     
     var onClickInCardMusica: () -> Void
     var onClickInPlay: () -> Void
-    var arrayDeMusicas: [Musica]
+    var arrayDePaquetes: [Paquete]
     
     private let columns = [GridItem(.flexible()), GridItem(.flexible())]
     
     var body: some View {
         LazyVGrid(columns: columns, spacing: 50) {
-            ForEach(arrayDeMusicas, id: \.id) { musica in
+            ForEach(arrayDePaquetes, id: \.id) { paquete in
                 Button {
                     onClickInCardMusica()
                 } label: {
                     ZStack {
                         VStack(alignment: .leading, spacing: 8) {
-                            WebImage(url: URL(string: musica.imagen))
+                            WebImage(url: URL(string: paquete.imagen))
                                 .cornerRadius(10)
                                 .overlay(
                                     Button(action: {
@@ -43,13 +43,13 @@ struct MusicaCardComponente: View {
                                         .padding(8),
                                     alignment: .topLeading
                                 )
-                            Text(musica.nombre)
+                            Text(paquete.nombre)
                                 .font(.headline)
                                 .foregroundColor(Color.white)
                                 .lineLimit(1)
                             HStack {
-                                Text("\(musica.songs) songs")
-                                Text(". \(musica.instrumental)")
+                                Text("\(paquete.cantidadDeMusica) songs")
+                                Text(". \(paquete.nombreDeCategoria)")
                             }
                             .font(.subheadline)
                             .foregroundColor(Color.colorTextSlider)

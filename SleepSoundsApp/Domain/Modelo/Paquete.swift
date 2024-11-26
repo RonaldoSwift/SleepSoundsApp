@@ -1,5 +1,5 @@
 //
-//  Musica.swift
+//  Paquete.swift
 //  SleepSoundsApp
 //
 //  Created by Ronaldo Andre on 20/11/24.
@@ -7,10 +7,11 @@
 
 import Foundation
 
-struct Musica:Identifiable {
+struct Paquete:Identifiable {
     var id: Int
     var imagen: String
     var nombre: String
-    var songs: Int
-    var instrumental: String
+    var cantidadDeMusica: Int
+    var tiempoDeDuracion: Int
+    var nombreDeCategoria: String
 }
