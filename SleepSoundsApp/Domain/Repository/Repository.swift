@@ -17,15 +17,16 @@ class Repository {
         self.webServiceAPI = webServiceAPI
     }
     
-    func getListaDeMusica()-> AnyPublisher<[Musica], Error> {
-        return webServiceAPI.fetchObtenerListaDeMusicaDiscover().map { (getObtenerListaDeMusicaDiscoverResponse:GetObtenerListaDeMusicaDiscoverResponse) in
-            getObtenerListaDeMusicaDiscoverResponse.listaDeMusicasDiscover.map { (listaDeMusicasDiscover:ListaDeMusicasDiscover) in
-                Musica(
-                    id: listaDeMusicasDiscover.id,
-                    imagen: listaDeMusicasDiscover.imagen,
-                    nombre: listaDeMusicasDiscover.nombre,
-                    songs: listaDeMusicasDiscover.songs,
-                    instrumental: listaDeMusicasDiscover.instrumental
+    func getListaDeMusica()-> AnyPublisher<[Paquete], Error> {
+        return webServiceAPI.fetchObtenerListaDeMusicaDiscover().map { (getObtenerListaDePaqueteResponse:GetObtenerListaDePaqueteResponse) in
+            getObtenerListaDePaqueteResponse.listaDePaquetes.map { (listaDePaquetes:ListaDePaquetes) in
+                Paquete(
+                    id: listaDePaquetes.id,
+                    imagen: listaDePaquetes.imagen,
+                    nombre: listaDePaquetes.nombre,
+                    cantidadDeMusica: listaDePaquetes.cantidadDeMusica,
+                    tiempoDeDuracion: listaDePaquetes.tiempoDeDuracion,
+                    nombreDeCategoria: listaDePaquetes.nombreDeCategoria
                 )
             }
         }

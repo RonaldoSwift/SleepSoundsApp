@@ -11,5 +11,5 @@ enum DiscoverUiState {
     case inicial
     case cargando
     case error(String)
-    case success([Musica])
+    case success([Paquete])
 }
