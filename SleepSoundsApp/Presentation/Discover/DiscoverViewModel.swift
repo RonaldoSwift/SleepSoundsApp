@@ -19,12 +19,12 @@ final class DiscoverViewModel: ObservableObject{
     
     init(repository: Repository) {
         self.repository = repository
-        startListaDeMusicas()
+        startListaDePaquete()
     }
     
-    func startListaDeMusicas() {
+    func startListaDePaquete() {
         discoverUiState = DiscoverUiState.cargando
-        repository.getListaDeMusica()
+        repository.getListaDePaquete()
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { completion in
                 switch (completion) {

@@ -1,27 +1,26 @@
 //
-//  GetObtenerListaDePaqueteResponse.swift
+//  GetDestacadoResponse.swift
 //  SleepSoundsApp
 //
-//  Created by Ronaldo Andre on 20/11/24.
+//  Created by Ronaldo Andre on 26/11/24.
 //
 
 import Foundation
 
-struct GetObtenerListaDePaqueteResponse: Decodable {
+struct GetDestacadoResponse: Decodable {
     
-    var listaDePaquetes: [ListaDePaquetes]
+    var paqueteDestacado: [PaquetesDestacado]
     
     private enum CodingKeys: String, CodingKey {
-        case listaDePaquetes = "listaDePaquetesEntity"
+        case paqueteDestacado = "listaDeDestacadosEntity"
     }
 }
 
-struct ListaDePaquetes: Decodable {
+struct PaquetesDestacado: Decodable {
     var id: Int
     var imagen: String
     var nombre: String
     var cantidadDeMusica: Int
-    var tiempoDeDuracion: Int
     var nombreDeCategoria: String
     
     private enum CodingKeys: String, CodingKey {
@@ -29,7 +28,6 @@ struct ListaDePaquetes: Decodable {
         case imagen
         case nombre
         case cantidadDeMusica
-        case tiempoDeDuracion
         case nombreDeCategoria
     }
 }
