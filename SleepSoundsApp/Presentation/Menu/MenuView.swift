@@ -21,8 +21,21 @@ struct MenuView: View {
                 Image(systemName: "moon.stars")
                 Text("Discover")
             }
+            
+            ComposerView()
+                .tabItem {
+                    Image(ImageResource.composerIcono)
+                        .renderingMode(.template)
+                    Text("Composer")
+                }
+            ProfileView()
+                .tabItem {
+                    Image(ImageResource.profileIcono)
+                        .renderingMode(.template)
+                    Text("Profile")
+                }
         }
-        .background(Color.colorFondo.ignoresSafeArea()) // Color de fondo adicional
+        .background(Color.colorFondo.ignoresSafeArea())
     }
 }
 

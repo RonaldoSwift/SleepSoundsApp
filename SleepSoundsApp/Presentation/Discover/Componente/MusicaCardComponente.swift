@@ -11,7 +11,7 @@ import SDWebImageSwiftUI
 
 struct MusicaCardComponente: View {
     
-    var onClickInCardMusica: () -> Void
+    var onClickInCardPaquete: () -> Void
     var onClickInPlay: () -> Void
     var arrayDePaquetes: [Paquete]
     
@@ -21,7 +21,7 @@ struct MusicaCardComponente: View {
         LazyVGrid(columns: columns, spacing: 50) {
             ForEach(arrayDePaquetes, id: \.id) { paquete in
                 Button {
-                    onClickInCardMusica()
+                    onClickInCardPaquete()
                 } label: {
                     ZStack {
                         VStack(alignment: .leading, spacing: 8) {

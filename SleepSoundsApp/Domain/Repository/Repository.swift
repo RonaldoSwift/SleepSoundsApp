@@ -17,8 +17,8 @@ class Repository {
         self.webServiceAPI = webServiceAPI
     }
     
-    func getListaDeMusica()-> AnyPublisher<[Paquete], Error> {
-        return webServiceAPI.fetchObtenerListaDeMusicaDiscover().map { (getObtenerListaDePaqueteResponse:GetObtenerListaDePaqueteResponse) in
+    func getListaDePaquete()-> AnyPublisher<[Paquete], Error> {
+        return webServiceAPI.fetchObtenerListaDeMusicaDiscover().map { (getObtenerListaDePaqueteResponse:GetPaquetesResponse) in
             getObtenerListaDePaqueteResponse.listaDePaquetes.map { (listaDePaquetes:ListaDePaquetes) in
                 Paquete(
                     id: listaDePaquetes.id,
@@ -27,6 +27,49 @@ class Repository {
                     cantidadDeMusica: listaDePaquetes.cantidadDeMusica,
                     tiempoDeDuracion: listaDePaquetes.tiempoDeDuracion,
                     nombreDeCategoria: listaDePaquetes.nombreDeCategoria
+                )
+            }
+        }
+        .eraseToAnyPublisher()
+    }
+    
+    func getDetalleDeMusica(idDeDetalle: Int) -> AnyPublisher<Detalle, Error> {
+        return webServiceAPI.fetchObtenerDetalleDePaquetePorID(idDetalle: idDeDetalle).map { (getDetallePaqueteResponse:GetDetallePaqueteResponse) in
+            Detalle(
+                id: getDetallePaqueteResponse.detalleDePaquete.idDetalle,
+                nombre: getDetallePaqueteResponse.detalleDePaquete.nombre,
+                cantidadDeMusica: getDetallePaqueteResponse.detalleDePaquete.cantidadDeMusica,
+                tiempoDeDuracion: getDetallePaqueteResponse.detalleDePaquete.tiempoDeDuracion,
+                nombreDeCategoria: getDetallePaqueteResponse.detalleDePaquete.nombreDeCategoria,
+                tituloDeDetalle: getDetallePaqueteResponse.detalleDePaquete.tituloDeDetalle,
+                detalle: getDetallePaqueteResponse.detalleDePaquete.detalle
+            )
+        }
+        .eraseToAnyPublisher()
+    }
+    
+    func getMusica() -> AnyPublisher<Musica, Error> {
+        return webServiceAPI.fetchObtenerMusica().map { (getMusicaResponse:GetMusicaResponse) in
+            Musica(
+                id: getMusicaResponse.musicaResponse.id,
+                artista: getMusicaResponse.musicaResponse.artista,
+                titulo: getMusicaResponse.musicaResponse.titulo,
+                album: getMusicaResponse.musicaResponse.album,
+                categoria: getMusicaResponse.musicaResponse.categoria
+            )
+        }
+        .eraseToAnyPublisher()
+    }
+    
+    func getPaqueteDestacado() -> AnyPublisher<[Destacado], Error> {
+        return webServiceAPI.fetchObtenerListaDeDestacado().map { (getDestacadoResponse:GetDestacadoResponse) in
+            getDestacadoResponse.paqueteDestacado.map { (paquetesDestacado:PaquetesDestacado) in
+                Destacado(
+                    id: paquetesDestacado.id,
+                    imagen: paquetesDestacado.imagen,
+                    nombre: paquetesDestacado.nombre,
+                    cantidadDeMusica: paquetesDestacado.cantidadDeMusica,
+                    nombreDeCategoria: paquetesDestacado.nombreDeCategoria
                 )
             }
         }

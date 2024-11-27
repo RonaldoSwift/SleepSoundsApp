@@ -25,6 +25,8 @@ struct DiscoverView: View {
     @State private var tituloDeAlerta: String = "Error"
     @State private var arrayDeMusicas: [Paquete] = []
     
+    @State private var navegarADetalle: Bool = false
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -46,8 +48,8 @@ struct DiscoverView: View {
                     }
                     else {
                         MusicaCardComponente(
-                            onClickInCardMusica: {
-                                onClickEnCardPaquete()
+                            onClickInCardPaquete: {
+                                navegarADetalle = true
                             },
                             onClickInPlay: {
                                 onClickEnButtonPlay()
@@ -57,6 +59,7 @@ struct DiscoverView: View {
                     }
                 }
                 .navigationTitle("Discover")
+                .navigation(DetalleDePaqueteView(), $navegarADetalle)
             }
         }
         .alert(isPresented: $showAlert) {
