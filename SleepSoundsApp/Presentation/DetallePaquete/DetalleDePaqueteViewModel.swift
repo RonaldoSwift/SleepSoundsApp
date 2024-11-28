@@ -22,7 +22,7 @@ final class DetalleDePaqueteViewModel: ObservableObject {
     }
     
     func startDetalleDeMusica(idDetalle: Int) {
-        detalleDePqueteUiState = DetalleDePqueteUiState.cargando
+        detalleDePqueteUiState = DetalleDePqueteUiState.cargandoDetalle
         repository.getDetalleDeMusica(idDeDetalle: idDetalle)
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { completion in
@@ -39,7 +39,7 @@ final class DetalleDePaqueteViewModel: ObservableObject {
     }
     
     func startMusica() {
-        detalleDePqueteUiState = DetalleDePqueteUiState.cargando
+        detalleDePqueteUiState = DetalleDePqueteUiState.cargandoMusica
         repository.getMusica()
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { completion in
@@ -56,7 +56,7 @@ final class DetalleDePaqueteViewModel: ObservableObject {
     }
     
     func startPaqueteDestacado() {
-        detalleDePqueteUiState = DetalleDePqueteUiState.cargando
+        detalleDePqueteUiState = DetalleDePqueteUiState.cargandoDestacado
         repository.getPaqueteDestacado()
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { completion in

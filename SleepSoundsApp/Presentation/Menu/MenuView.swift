@@ -3,12 +3,20 @@ import SwiftUI
 struct MenuView: View {
     
     init() {
-        let appearance = UITabBarAppearance()
-        appearance.configureWithOpaqueBackground()
-        appearance.backgroundColor = UIColor(Color.colorFondo)
+        //Navigation Bar
+        let navBarAppearence = UINavigationBarAppearance() // use as global variable, otherwise SwiftUI may cause problems.
+        navBarAppearence.configureWithTransparentBackground()
+        navBarAppearence.titleTextAttributes = [.foregroundColor: UIColor.white]
+        navBarAppearence.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+        UINavigationBar.appearance().standardAppearance = navBarAppearence
+        UINavigationBar.appearance().scrollEdgeAppearance = navBarAppearence
         
-        UITabBar.appearance().standardAppearance = appearance
-        UITabBar.appearance().scrollEdgeAppearance = appearance
+        //TabBar
+        let tabBarAppearance = UITabBarAppearance()
+        tabBarAppearance.configureWithOpaqueBackground()
+        tabBarAppearance.backgroundColor = UIColor(Color.colorFondo)
+        UITabBar.appearance().standardAppearance = tabBarAppearance
+        UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
     }
     
     var body: some View {

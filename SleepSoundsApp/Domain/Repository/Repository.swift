@@ -20,12 +20,18 @@ class Repository {
     func getListaDePaquete()-> AnyPublisher<[Paquete], Error> {
         return webServiceAPI.fetchObtenerListaDeMusicaDiscover().map { (getObtenerListaDePaqueteResponse:GetPaquetesResponse) in
             getObtenerListaDePaqueteResponse.listaDePaquetes.map { (listaDePaquetes:ListaDePaquetes) in
-                Paquete(
+                let descripcion: String
+                if (listaDePaquetes.cantidadDeMusica == 0) {
+                    descripcion = "\(listaDePaquetes.tiempoDeDuracion) minutos"
+                } else {
+                    descripcion = "\(listaDePaquetes.cantidadDeMusica) songs"
+                }
+                
+                return Paquete(
                     id: listaDePaquetes.id,
                     imagen: listaDePaquetes.imagen,
                     nombre: listaDePaquetes.nombre,
-                    cantidadDeMusica: listaDePaquetes.cantidadDeMusica,
-                    tiempoDeDuracion: listaDePaquetes.tiempoDeDuracion,
+                    descripcion: descripcion,
                     nombreDeCategoria: listaDePaquetes.nombreDeCategoria
                 )
             }

@@ -16,4 +16,9 @@ extension View {
         )
     }
     
+    func sheet(_ view: any View, _ isPresented: Binding<Bool>) -> some View {
+        modifier(
+            SheetModifier(presentingView: AnyView(view), isPresented: isPresented)
+        )
+    }
 }

@@ -8,16 +8,14 @@
 import SwiftUI
 
 struct DetalleDePaqueteView: View {
+    
+    @State private var showModal = false
+    
     var body: some View {
-        ZStack {
-            Image(ImageResource.fondoDetalle)
-                .resizable()
-                .scaledToFill()
-                .ignoresSafeArea()
-            
-            VStack {
-                Text("DetalleDePaqueteView")
-            }
+        if #available(iOS 16.0, *) {
+            DetalleDePaqueteViewiOS16()
+        } else {
+            DetalleDePaqueteViewiOS15()
         }
     }
 }
