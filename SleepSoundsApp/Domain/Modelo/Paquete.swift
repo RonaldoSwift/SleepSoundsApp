@@ -11,7 +11,6 @@ struct Paquete:Identifiable {
     var id: Int
     var imagen: String
     var nombre: String
-    var cantidadDeMusica: Int
-    var tiempoDeDuracion: Int
+    var descripcion: String
     var nombreDeCategoria: String
 }

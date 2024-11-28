@@ -34,6 +34,12 @@
 		FA46929A2CF62C9E00BD1DDB /* DetalleDePaqueteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4692992CF62C9E00BD1DDB /* DetalleDePaqueteView.swift */; };
 		FA46929C2CF62CCF00BD1DDB /* DetalleDePaqueteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA46929B2CF62CCF00BD1DDB /* DetalleDePaqueteViewModel.swift */; };
 		FA46929E2CF62D1000BD1DDB /* DetalleDePqueteUiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA46929D2CF62D1000BD1DDB /* DetalleDePqueteUiState.swift */; };
+		FA5DD8F72CF7629F0081886D /* MoodYDreamsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5DD8F62CF7629F0081886D /* MoodYDreamsComponent.swift */; };
+		FA5DD8FA2CF765290081886D /* ModalDetallePaqueteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5DD8F92CF765290081886D /* ModalDetallePaqueteView.swift */; };
+		FA5DD8FD2CF7665A0081886D /* SheetModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5DD8FC2CF7665A0081886D /* SheetModifier.swift */; };
+		FA5DD8FF2CF784B60081886D /* DetalleDePaqueteViewiOS16.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5DD8FE2CF784B60081886D /* DetalleDePaqueteViewiOS16.swift */; };
+		FA5DD9012CF7854F0081886D /* DetalleDePaqueteViewiOS15.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5DD9002CF7854F0081886D /* DetalleDePaqueteViewiOS15.swift */; };
+		FA8D9BF52CF8BE8200C00C04 /* ButonCapsulePlayAndStartComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D9BF42CF8BE8200C00C04 /* ButonCapsulePlayAndStartComponent.swift */; };
 		FA91F8722CECE9710004AC6D /* AppRootManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91F8712CECE9710004AC6D /* AppRootManager.swift */; };
 		FA91F8762CECEBA50004AC6D /* NavigationModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91F8752CECEBA50004AC6D /* NavigationModifier.swift */; };
 		FA91F8782CECEC400004AC6D /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91F8772CECEC400004AC6D /* View+Extension.swift */; };
@@ -84,6 +90,12 @@
 		FA4692992CF62C9E00BD1DDB /* DetalleDePaqueteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleDePaqueteView.swift; sourceTree = "<group>"; };
 		FA46929B2CF62CCF00BD1DDB /* DetalleDePaqueteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleDePaqueteViewModel.swift; sourceTree = "<group>"; };
 		FA46929D2CF62D1000BD1DDB /* DetalleDePqueteUiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleDePqueteUiState.swift; sourceTree = "<group>"; };
+		FA5DD8F62CF7629F0081886D /* MoodYDreamsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodYDreamsComponent.swift; sourceTree = "<group>"; };
+		FA5DD8F92CF765290081886D /* ModalDetallePaqueteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDetallePaqueteView.swift; sourceTree = "<group>"; };
+		FA5DD8FC2CF7665A0081886D /* SheetModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetModifier.swift; sourceTree = "<group>"; };
+		FA5DD8FE2CF784B60081886D /* DetalleDePaqueteViewiOS16.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleDePaqueteViewiOS16.swift; sourceTree = "<group>"; };
+		FA5DD9002CF7854F0081886D /* DetalleDePaqueteViewiOS15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleDePaqueteViewiOS15.swift; sourceTree = "<group>"; };
+		FA8D9BF42CF8BE8200C00C04 /* ButonCapsulePlayAndStartComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButonCapsulePlayAndStartComponent.swift; sourceTree = "<group>"; };
 		FA91F8712CECE9710004AC6D /* AppRootManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootManager.swift; sourceTree = "<group>"; };
 		FA91F8752CECEBA50004AC6D /* NavigationModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModifier.swift; sourceTree = "<group>"; };
 		FA91F8772CECEC400004AC6D /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
@@ -290,11 +302,24 @@
 		FA46928C2CF61F5200BD1DDB /* DetallePaquete */ = {
 			isa = PBXGroup;
 			children = (
+				FA5DD8F52CF7623E0081886D /* Componente */,
+				FA5DD8F92CF765290081886D /* ModalDetallePaqueteView.swift */,
 				FA4692992CF62C9E00BD1DDB /* DetalleDePaqueteView.swift */,
 				FA46929B2CF62CCF00BD1DDB /* DetalleDePaqueteViewModel.swift */,
 				FA46929D2CF62D1000BD1DDB /* DetalleDePqueteUiState.swift */,
 			);
 			path = DetallePaquete;
+			sourceTree = "<group>";
+		};
+		FA5DD8F52CF7623E0081886D /* Componente */ = {
+			isa = PBXGroup;
+			children = (
+				FA5DD8F62CF7629F0081886D /* MoodYDreamsComponent.swift */,
+				FA5DD8FE2CF784B60081886D /* DetalleDePaqueteViewiOS16.swift */,
+				FA5DD9002CF7854F0081886D /* DetalleDePaqueteViewiOS15.swift */,
+				FA8D9BF42CF8BE8200C00C04 /* ButonCapsulePlayAndStartComponent.swift */,
+			);
+			path = Componente;
 			sourceTree = "<group>";
 		};
 		FA91F8702CECE9210004AC6D /* Root */ = {
@@ -320,6 +345,7 @@
 			isa = PBXGroup;
 			children = (
 				FA91F8752CECEBA50004AC6D /* NavigationModifier.swift */,
+				FA5DD8FC2CF7665A0081886D /* SheetModifier.swift */,
 				FA91F8772CECEC400004AC6D /* View+Extension.swift */,
 			);
 			path = Navegacion;
@@ -523,7 +549,10 @@
 				FA0822682CEEB8A700386BE5 /* DiscoverUiState.swift in Sources */,
 				FA08226B2CEEC71300386BE5 /* MusicaCardComponente.swift in Sources */,
 				FA1B3AB82CECD9E700E4A997 /* SleepSoundsAppApp.swift in Sources */,
+				FA5DD8F72CF7629F0081886D /* MoodYDreamsComponent.swift in Sources */,
+				FA5DD8FF2CF784B60081886D /* DetalleDePaqueteViewiOS16.swift in Sources */,
 				FA0822542CEE300600386BE5 /* MenuView.swift in Sources */,
+				FA5DD8FD2CF7665A0081886D /* SheetModifier.swift in Sources */,
 				FA91F8812CECEF5B0004AC6D /* SliderView.swift in Sources */,
 				FA0822662CEEB7CF00386BE5 /* DiscoverViewModel.swift in Sources */,
 				FA1B3ABE2CECDE4100E4A997 /* SplashView.swift in Sources */,
@@ -532,6 +561,7 @@
 				FA4692962CF628E500BD1DDB /* Musica.swift in Sources */,
 				FA91F87E2CECED650004AC6D /* SliderRootView.swift in Sources */,
 				FA46928E2CF620F000BD1DDB /* GetDetallePaqueteResponse.swift in Sources */,
+				FA5DD9012CF7854F0081886D /* DetalleDePaqueteViewiOS15.swift in Sources */,
 				FA4692982CF6290C00BD1DDB /* Destacado.swift in Sources */,
 				FA0822642CEEB3AE00386BE5 /* Paquete.swift in Sources */,
 				FA46929E2CF62D1000BD1DDB /* DetalleDePqueteUiState.swift in Sources */,
@@ -545,9 +575,11 @@
 				FA91F89C2CED62FE0004AC6D /* CustomTabIndicator.swift in Sources */,
 				FA4692882CF6173200BD1DDB /* ComposerView.swift in Sources */,
 				FA46928B2CF61A2B00BD1DDB /* ProfileView.swift in Sources */,
+				FA5DD8FA2CF765290081886D /* ModalDetallePaqueteView.swift in Sources */,
 				FA0822622CEEB2A600386BE5 /* Repository.swift in Sources */,
 				FA46929A2CF62C9E00BD1DDB /* DetalleDePaqueteView.swift in Sources */,
 				FA91F8762CECEBA50004AC6D /* NavigationModifier.swift in Sources */,
+				FA8D9BF52CF8BE8200C00C04 /* ButonCapsulePlayAndStartComponent.swift in Sources */,
 				FA91F8722CECE9710004AC6D /* AppRootManager.swift in Sources */,
 				FA91F87C2CECECFD0004AC6D /* SplashRootView.swift in Sources */,
 				FA08225B2CEE373C00386BE5 /* ErrorResponse.swift in Sources */,

@@ -9,7 +9,9 @@ import Foundation
 
 enum DetalleDePqueteUiState {
     case inicial
-    case cargando
+    case cargandoDetalle
+    case cargandoMusica
+    case cargandoDestacado
     case error(String)
     case successDetalle(Detalle)
     case successMusica(Musica)

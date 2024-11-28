@@ -48,7 +48,7 @@ struct MusicaCardComponente: View {
                                 .foregroundColor(Color.white)
                                 .lineLimit(1)
                             HStack {
-                                Text("\(paquete.cantidadDeMusica) songs")
+                                Text(paquete.descripcion)
                                 Text(". \(paquete.nombreDeCategoria)")
                             }
                             .font(.subheadline)
