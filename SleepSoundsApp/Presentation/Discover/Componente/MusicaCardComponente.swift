@@ -40,8 +40,7 @@ struct MusicaCardComponente: View {
                                                 .frame(width: 24, height: 24)
                                         }
                                     }
-                                        .padding(8),
-                                    alignment: .topLeading
+                                        .padding(8), alignment: .topLeading
                                 )
                             Text(paquete.nombre)
                                 .font(.headline)

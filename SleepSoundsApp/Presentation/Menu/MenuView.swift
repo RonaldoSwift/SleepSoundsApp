@@ -14,7 +14,7 @@ struct MenuView: View {
         //TabBar
         let tabBarAppearance = UITabBarAppearance()
         tabBarAppearance.configureWithOpaqueBackground()
-        tabBarAppearance.backgroundColor = UIColor(Color.colorFondo)
+        tabBarAppearance.backgroundColor = UIColor(Color.colorBoton)
         UITabBar.appearance().standardAppearance = tabBarAppearance
         UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
     }

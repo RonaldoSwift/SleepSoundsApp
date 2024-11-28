@@ -22,7 +22,7 @@ class Repository {
             getObtenerListaDePaqueteResponse.listaDePaquetes.map { (listaDePaquetes:ListaDePaquetes) in
                 let descripcion: String
                 if (listaDePaquetes.cantidadDeMusica == 0) {
-                    descripcion = "\(listaDePaquetes.tiempoDeDuracion) minutos"
+                    descripcion = "\(listaDePaquetes.tiempoDeDuracion) hours"
                 } else {
                     descripcion = "\(listaDePaquetes.cantidadDeMusica) songs"
                 }
