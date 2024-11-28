@@ -70,11 +70,18 @@ struct ModalDetallePaqueteView: View {
                         
                         Text(detalleDePaquete.detalle)
                             .foregroundColor(Color.colorTextSlider)
-                        
-                        List {
-                            Text("Hola")
+                            .padding(.bottom,15)
+
+                        if (showLoadingMusica == true) {
+                            ProgressView()
+                        } else {
+                            CardMusicComponent(
+                                artista: musicaDeDetalle.artista,
+                                titulo: musicaDeDetalle.titulo,
+                                album: musicaDeDetalle.album,
+                                categoria: musicaDeDetalle.categoria
+                            )
                         }
-                        
                     }
                     .padding()
                 }
@@ -93,6 +100,7 @@ struct ModalDetallePaqueteView: View {
         }
         .onAppear{
             detalleDePaqueteViewModel.startDetalleDeMusica(idDetalle: 1)
+            detalleDePaqueteViewModel.startMusica()
         }
         .onReceive(detalleDePaqueteViewModel.$detalleDePqueteUiState) { detalleDePaqueteUiState in
             switch (detalleDePaqueteUiState) {
