@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct ModalDetallePaqueteView: View {
     
@@ -39,7 +40,7 @@ struct ModalDetallePaqueteView: View {
         album: "",
         categoria: ""
     )
-    @State private var arrayDeUltimoDeTemporada: [Destacado] = []
+    @State private var arrayDestacado: [Destacado] = []
     
     var body: some View {
         ZStack {
@@ -71,7 +72,7 @@ struct ModalDetallePaqueteView: View {
                         Text(detalleDePaquete.detalle)
                             .foregroundColor(Color.colorTextSlider)
                             .padding(.bottom,15)
-
+                        
                         if (showLoadingMusica == true) {
                             ProgressView()
                         } else {
@@ -81,6 +82,15 @@ struct ModalDetallePaqueteView: View {
                                 album: musicaDeDetalle.album,
                                 categoria: musicaDeDetalle.categoria
                             )
+                        }
+                        
+                        if (showLoadingDestacado == true) {
+                            ProgressView()
+                        } else {
+                            Text("Featured On")
+                                .font(.title3)
+                                .foregroundColor(Color.white)
+                            DestacadoListComponent(arrayDestacado: arrayDestacado)
                         }
                     }
                     .padding()
@@ -101,6 +111,7 @@ struct ModalDetallePaqueteView: View {
         .onAppear{
             detalleDePaqueteViewModel.startDetalleDeMusica(idDetalle: 1)
             detalleDePaqueteViewModel.startMusica()
+            detalleDePaqueteViewModel.startPaqueteDestacado()
         }
         .onReceive(detalleDePaqueteViewModel.$detalleDePqueteUiState) { detalleDePaqueteUiState in
             switch (detalleDePaqueteUiState) {
@@ -126,7 +137,7 @@ struct ModalDetallePaqueteView: View {
                 musicaDeDetalle = musica
             case .successDestacado(let destacados):
                 showLoadingDestacado = false
-                arrayDeUltimoDeTemporada = destacados
+                arrayDestacado = destacados
             }
         }
     }
