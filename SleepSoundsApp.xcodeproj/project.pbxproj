@@ -41,6 +41,7 @@
 		FA5DD9012CF7854F0081886D /* DetalleDePaqueteViewiOS15.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5DD9002CF7854F0081886D /* DetalleDePaqueteViewiOS15.swift */; };
 		FA8D9BF52CF8BE8200C00C04 /* ButonCapsulePlayAndStartComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D9BF42CF8BE8200C00C04 /* ButonCapsulePlayAndStartComponent.swift */; };
 		FA8D9BF72CF92DBA00C00C04 /* CardMusicComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D9BF62CF92DBA00C00C04 /* CardMusicComponent.swift */; };
+		FA8D9BF92CF9410B00C00C04 /* DestacadoListComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D9BF82CF9410B00C00C04 /* DestacadoListComponent.swift */; };
 		FA91F8722CECE9710004AC6D /* AppRootManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91F8712CECE9710004AC6D /* AppRootManager.swift */; };
 		FA91F8762CECEBA50004AC6D /* NavigationModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91F8752CECEBA50004AC6D /* NavigationModifier.swift */; };
 		FA91F8782CECEC400004AC6D /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91F8772CECEC400004AC6D /* View+Extension.swift */; };
@@ -98,6 +99,7 @@
 		FA5DD9002CF7854F0081886D /* DetalleDePaqueteViewiOS15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleDePaqueteViewiOS15.swift; sourceTree = "<group>"; };
 		FA8D9BF42CF8BE8200C00C04 /* ButonCapsulePlayAndStartComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButonCapsulePlayAndStartComponent.swift; sourceTree = "<group>"; };
 		FA8D9BF62CF92DBA00C00C04 /* CardMusicComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMusicComponent.swift; sourceTree = "<group>"; };
+		FA8D9BF82CF9410B00C00C04 /* DestacadoListComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestacadoListComponent.swift; sourceTree = "<group>"; };
 		FA91F8712CECE9710004AC6D /* AppRootManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootManager.swift; sourceTree = "<group>"; };
 		FA91F8752CECEBA50004AC6D /* NavigationModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModifier.swift; sourceTree = "<group>"; };
 		FA91F8772CECEC400004AC6D /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
@@ -321,6 +323,7 @@
 				FA5DD9002CF7854F0081886D /* DetalleDePaqueteViewiOS15.swift */,
 				FA8D9BF42CF8BE8200C00C04 /* ButonCapsulePlayAndStartComponent.swift */,
 				FA8D9BF62CF92DBA00C00C04 /* CardMusicComponent.swift */,
+				FA8D9BF82CF9410B00C00C04 /* DestacadoListComponent.swift */,
 			);
 			path = Componente;
 			sourceTree = "<group>";
@@ -571,6 +574,7 @@
 				FA91F8782CECEC400004AC6D /* View+Extension.swift in Sources */,
 				FA0822592CEE372A00386BE5 /* WebServiceAPI.swift in Sources */,
 				FA4692922CF6247200BD1DDB /* GetDestacadoResponse.swift in Sources */,
+				FA8D9BF92CF9410B00C00C04 /* DestacadoListComponent.swift in Sources */,
 				FA4692942CF628AE00BD1DDB /* Detalle.swift in Sources */,
 				FA91F8992CED55560004AC6D /* DiscoverView.swift in Sources */,
 				FA4692902CF623BE00BD1DDB /* GetMusicaResponse.swift in Sources */,
