@@ -11,8 +11,6 @@ import SwiftUI
 @available(iOS 16.0, *)
 struct DetalleDePaqueteViewiOS16: View {
     
-    @State private var showModal = false
-
     var body: some View {
         ZStack {
             Image(ImageResource.fondoDetalle)
@@ -32,10 +30,6 @@ struct DetalleDePaqueteViewiOS16: View {
             }
             .offset(y: -80)
         }
-        .onAppear(perform: {
-            showModal = true
-        })
-        .sheet(ModalDetallePaqueteView(), $showModal)
-        .presentationDetents([.medium])
+        .presentationDetents([.medium, .large])
     }
 }

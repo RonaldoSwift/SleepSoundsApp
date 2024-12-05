@@ -2,6 +2,12 @@ import SwiftUI
 
 struct MenuView: View {
     
+    @State private var navegarADetalle: Bool = false
+    @State private var showModalDetallePaquete = false
+    @State private var showModalPlayMusic = false
+    
+    var sharedMusicViewModel = SharedMusicViewModel()
+    
     init() {
         //Navigation Bar
         let navBarAppearence = UINavigationBarAppearance() // use as global variable, otherwise SwiftUI may cause problems.
@@ -21,10 +27,34 @@ struct MenuView: View {
     
     var body: some View {
         TabView {
-            DiscoverView(
-                onClickEnCardPaquete: {},
-                onClickEnButtonPlay: {}
-            )
+            NavigationView {
+                DiscoverView(
+                    onClickEnCardPaquete: {
+                        navegarADetalle = true
+                    },
+                    onClickEnButtonPlay: {
+                        //queda pendiente
+                    }
+                )
+                
+                .navigation(DetalleDePaqueteView(onClickOnAppear: {
+                    showModalDetallePaquete = true
+                }), $navegarADetalle)
+                .sheet(
+                    ModalDetallePaqueteView(onClickInPlay: {
+                        showModalDetallePaquete = false
+                        showModalPlayMusic = true
+                    }),
+                    $showModalDetallePaquete
+                )
+                .fullSheet(
+                    SleepPlayerView(
+                        musicMediaplayer: MusicMediaPlayer(musica: Musica(
+                            id: 0, artista: "", titulo: "", album: "", urlDeMusica: "", bloqueado: false))),
+                    $showModalPlayMusic
+                )
+            }
+            
             .tabItem {
                 Image(systemName: "moon.stars")
                 Text("Discover")

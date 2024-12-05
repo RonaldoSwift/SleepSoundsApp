@@ -14,6 +14,6 @@ enum DetalleDePqueteUiState {
     case cargandoDestacado
     case error(String)
     case successDetalle(Detalle)
-    case successMusica(Musica)
+    case successMusica([Musica])
     case successDestacado([Destacado])
 }

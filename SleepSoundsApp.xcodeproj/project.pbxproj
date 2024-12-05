@@ -17,7 +17,7 @@
 		FA0822642CEEB3AE00386BE5 /* Paquete.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0822632CEEB3AE00386BE5 /* Paquete.swift */; };
 		FA0822662CEEB7CF00386BE5 /* DiscoverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0822652CEEB7CF00386BE5 /* DiscoverViewModel.swift */; };
 		FA0822682CEEB8A700386BE5 /* DiscoverUiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0822672CEEB8A700386BE5 /* DiscoverUiState.swift */; };
-		FA08226B2CEEC71300386BE5 /* MusicaCardComponente.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA08226A2CEEC71300386BE5 /* MusicaCardComponente.swift */; };
+		FA08226B2CEEC71300386BE5 /* PaqueteCardComponente.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA08226A2CEEC71300386BE5 /* PaqueteCardComponente.swift */; };
 		FA08226D2CEED52700386BE5 /* CategoriaDiscover.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA08226C2CEED52700386BE5 /* CategoriaDiscover.swift */; };
 		FA1B3AB52CECD9E700E4A997 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA1B3AAF2CECD9E700E4A997 /* Preview Assets.xcassets */; };
 		FA1B3AB62CECD9E700E4A997 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA1B3AB12CECD9E700E4A997 /* Assets.xcassets */; };
@@ -42,6 +42,10 @@
 		FA8D9BF52CF8BE8200C00C04 /* ButonCapsulePlayAndStartComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D9BF42CF8BE8200C00C04 /* ButonCapsulePlayAndStartComponent.swift */; };
 		FA8D9BF72CF92DBA00C00C04 /* CardMusicComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D9BF62CF92DBA00C00C04 /* CardMusicComponent.swift */; };
 		FA8D9BF92CF9410B00C00C04 /* DestacadoListComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D9BF82CF9410B00C00C04 /* DestacadoListComponent.swift */; };
+		FA8D9BFC2CF944A600C00C04 /* SleepPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D9BFB2CF944A600C00C04 /* SleepPlayerView.swift */; };
+		FA8D9C002CF95A4800C00C04 /* SheetFullModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D9BFF2CF95A4800C00C04 /* SheetFullModifier.swift */; };
+		FA8FADA52CFA37A600D4B745 /* MusicMediaPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8FADA42CFA37A600D4B745 /* MusicMediaPlayer.swift */; };
+		FA8FADA72CFA390B00D4B745 /* SleepPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8FADA62CFA390B00D4B745 /* SleepPlayerViewModel.swift */; };
 		FA91F8722CECE9710004AC6D /* AppRootManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91F8712CECE9710004AC6D /* AppRootManager.swift */; };
 		FA91F8762CECEBA50004AC6D /* NavigationModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91F8752CECEBA50004AC6D /* NavigationModifier.swift */; };
 		FA91F8782CECEC400004AC6D /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91F8772CECEC400004AC6D /* View+Extension.swift */; };
@@ -59,6 +63,7 @@
 		FA91F8952CED343C0004AC6D /* SF-Pro-Rounded-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = FA91F88B2CED343C0004AC6D /* SF-Pro-Rounded-Thin.otf */; };
 		FA91F8992CED55560004AC6D /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91F8982CED55560004AC6D /* DiscoverView.swift */; };
 		FA91F89C2CED62FE0004AC6D /* CustomTabIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91F89B2CED62FE0004AC6D /* CustomTabIndicator.swift */; };
+		FAA5FAD22D022845001B3702 /* SharedViewModelMusica.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5FAD12D022845001B3702 /* SharedViewModelMusica.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,7 +79,7 @@
 		FA0822632CEEB3AE00386BE5 /* Paquete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paquete.swift; sourceTree = "<group>"; };
 		FA0822652CEEB7CF00386BE5 /* DiscoverViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewModel.swift; sourceTree = "<group>"; };
 		FA0822672CEEB8A700386BE5 /* DiscoverUiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverUiState.swift; sourceTree = "<group>"; };
-		FA08226A2CEEC71300386BE5 /* MusicaCardComponente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicaCardComponente.swift; sourceTree = "<group>"; };
+		FA08226A2CEEC71300386BE5 /* PaqueteCardComponente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaqueteCardComponente.swift; sourceTree = "<group>"; };
 		FA08226C2CEED52700386BE5 /* CategoriaDiscover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaDiscover.swift; sourceTree = "<group>"; };
 		FA1B3AAF2CECD9E700E4A997 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FA1B3AB12CECD9E700E4A997 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,6 +105,10 @@
 		FA8D9BF42CF8BE8200C00C04 /* ButonCapsulePlayAndStartComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButonCapsulePlayAndStartComponent.swift; sourceTree = "<group>"; };
 		FA8D9BF62CF92DBA00C00C04 /* CardMusicComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMusicComponent.swift; sourceTree = "<group>"; };
 		FA8D9BF82CF9410B00C00C04 /* DestacadoListComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestacadoListComponent.swift; sourceTree = "<group>"; };
+		FA8D9BFB2CF944A600C00C04 /* SleepPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepPlayerView.swift; sourceTree = "<group>"; };
+		FA8D9BFF2CF95A4800C00C04 /* SheetFullModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetFullModifier.swift; sourceTree = "<group>"; };
+		FA8FADA42CFA37A600D4B745 /* MusicMediaPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicMediaPlayer.swift; sourceTree = "<group>"; };
+		FA8FADA62CFA390B00D4B745 /* SleepPlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepPlayerViewModel.swift; sourceTree = "<group>"; };
 		FA91F8712CECE9710004AC6D /* AppRootManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootManager.swift; sourceTree = "<group>"; };
 		FA91F8752CECEBA50004AC6D /* NavigationModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModifier.swift; sourceTree = "<group>"; };
 		FA91F8772CECEC400004AC6D /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
@@ -118,6 +127,7 @@
 		FA91F8962CED34F00004AC6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA91F8982CED55560004AC6D /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
 		FA91F89B2CED62FE0004AC6D /* CustomTabIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabIndicator.swift; sourceTree = "<group>"; };
+		FAA5FAD12D022845001B3702 /* SharedViewModelMusica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedViewModelMusica.swift; sourceTree = "<group>"; };
 		FAC7A0D12CEC18EC008ECFDE /* SleepSoundsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepSoundsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -218,7 +228,7 @@
 		FA0822692CEEC6E400386BE5 /* Componente */ = {
 			isa = PBXGroup;
 			children = (
-				FA08226A2CEEC71300386BE5 /* MusicaCardComponente.swift */,
+				FA08226A2CEEC71300386BE5 /* PaqueteCardComponente.swift */,
 				FA08226C2CEED52700386BE5 /* CategoriaDiscover.swift */,
 			);
 			path = Componente;
@@ -253,6 +263,7 @@
 				FA1B3AB32CECD9E700E4A997 /* SleepSoundsAppApp.swift */,
 				FA91F8702CECE9210004AC6D /* Root */,
 				FA91F8742CECEB870004AC6D /* Navegacion */,
+				FAA5FAD12D022845001B3702 /* SharedViewModelMusica.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -260,6 +271,7 @@
 		FA1B3ABB2CECDDA900E4A997 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				FA8D9BFA2CF9440000C00C04 /* SleepPlayer */,
 				FA0822522CEE2FF900386BE5 /* Menu */,
 				FA4692862CF6171800BD1DDB /* Composer */,
 				FA4692892CF61A1900BD1DDB /* Profile */,
@@ -328,6 +340,16 @@
 			path = Componente;
 			sourceTree = "<group>";
 		};
+		FA8D9BFA2CF9440000C00C04 /* SleepPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				FA8D9BFB2CF944A600C00C04 /* SleepPlayerView.swift */,
+				FA8FADA42CFA37A600D4B745 /* MusicMediaPlayer.swift */,
+				FA8FADA62CFA390B00D4B745 /* SleepPlayerViewModel.swift */,
+			);
+			path = SleepPlayer;
+			sourceTree = "<group>";
+		};
 		FA91F8702CECE9210004AC6D /* Root */ = {
 			isa = PBXGroup;
 			children = (
@@ -353,6 +375,7 @@
 				FA91F8752CECEBA50004AC6D /* NavigationModifier.swift */,
 				FA5DD8FC2CF7665A0081886D /* SheetModifier.swift */,
 				FA91F8772CECEC400004AC6D /* View+Extension.swift */,
+				FA8D9BFF2CF95A4800C00C04 /* SheetFullModifier.swift */,
 			);
 			path = Navegacion;
 			sourceTree = "<group>";
@@ -552,8 +575,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA8D9BFC2CF944A600C00C04 /* SleepPlayerView.swift in Sources */,
 				FA0822682CEEB8A700386BE5 /* DiscoverUiState.swift in Sources */,
-				FA08226B2CEEC71300386BE5 /* MusicaCardComponente.swift in Sources */,
+				FA08226B2CEEC71300386BE5 /* PaqueteCardComponente.swift in Sources */,
 				FA1B3AB82CECD9E700E4A997 /* SleepSoundsAppApp.swift in Sources */,
 				FA5DD8F72CF7629F0081886D /* MoodYDreamsComponent.swift in Sources */,
 				FA5DD8FF2CF784B60081886D /* DetalleDePaqueteViewiOS16.swift in Sources */,
@@ -569,18 +593,22 @@
 				FA46928E2CF620F000BD1DDB /* GetDetallePaqueteResponse.swift in Sources */,
 				FA5DD9012CF7854F0081886D /* DetalleDePaqueteViewiOS15.swift in Sources */,
 				FA4692982CF6290C00BD1DDB /* Destacado.swift in Sources */,
+				FA8FADA52CFA37A600D4B745 /* MusicMediaPlayer.swift in Sources */,
 				FA0822642CEEB3AE00386BE5 /* Paquete.swift in Sources */,
+				FA8D9C002CF95A4800C00C04 /* SheetFullModifier.swift in Sources */,
 				FA46929E2CF62D1000BD1DDB /* DetalleDePqueteUiState.swift in Sources */,
 				FA91F8782CECEC400004AC6D /* View+Extension.swift in Sources */,
 				FA0822592CEE372A00386BE5 /* WebServiceAPI.swift in Sources */,
 				FA4692922CF6247200BD1DDB /* GetDestacadoResponse.swift in Sources */,
 				FA8D9BF92CF9410B00C00C04 /* DestacadoListComponent.swift in Sources */,
 				FA4692942CF628AE00BD1DDB /* Detalle.swift in Sources */,
+				FA8FADA72CFA390B00D4B745 /* SleepPlayerViewModel.swift in Sources */,
 				FA91F8992CED55560004AC6D /* DiscoverView.swift in Sources */,
 				FA4692902CF623BE00BD1DDB /* GetMusicaResponse.swift in Sources */,
 				FA08226D2CEED52700386BE5 /* CategoriaDiscover.swift in Sources */,
 				FA8D9BF72CF92DBA00C00C04 /* CardMusicComponent.swift in Sources */,
 				FA91F89C2CED62FE0004AC6D /* CustomTabIndicator.swift in Sources */,
+				FAA5FAD22D022845001B3702 /* SharedViewModelMusica.swift in Sources */,
 				FA4692882CF6173200BD1DDB /* ComposerView.swift in Sources */,
 				FA46928B2CF61A2B00BD1DDB /* ProfileView.swift in Sources */,
 				FA5DD8FA2CF765290081886D /* ModalDetallePaqueteView.swift in Sources */,

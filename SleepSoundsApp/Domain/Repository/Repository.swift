@@ -18,21 +18,23 @@ class Repository {
     }
     
     func getListaDePaquete()-> AnyPublisher<[Paquete], Error> {
-        return webServiceAPI.fetchObtenerListaDeMusicaDiscover().map { (getObtenerListaDePaqueteResponse:GetPaquetesResponse) in
-            getObtenerListaDePaqueteResponse.listaDePaquetes.map { (listaDePaquetes:ListaDePaquetes) in
+        return webServiceAPI.fetchObtenerListaDePaquetes().map { (getPaquetesResponse:GetPaquetesResponse) in
+            getPaquetesResponse.listaDePaquetes.map { (listaDePaquetes:ListaDePaquetes) in
+                
                 let descripcion: String
+                
                 if (listaDePaquetes.cantidadDeMusica == 0) {
                     descripcion = "\(listaDePaquetes.tiempoDeDuracion) hours"
                 } else {
                     descripcion = "\(listaDePaquetes.cantidadDeMusica) songs"
                 }
-                
                 return Paquete(
                     id: listaDePaquetes.id,
                     imagen: listaDePaquetes.imagen,
                     nombre: listaDePaquetes.nombre,
-                    descripcion: descripcion,
-                    nombreDeCategoria: listaDePaquetes.nombreDeCategoria
+                    cantidadDeMusica: listaDePaquetes.cantidadDeMusica,
+                    tiempoDeDuracion: listaDePaquetes.tiempoDeDuracion,
+                    nombreDeCategoria: listaDePaquetes.nombreCategoria
                 )
             }
         }
@@ -54,15 +56,18 @@ class Repository {
         .eraseToAnyPublisher()
     }
     
-    func getMusica() -> AnyPublisher<Musica, Error> {
-        return webServiceAPI.fetchObtenerMusica().map { (getMusicaResponse:GetMusicaResponse) in
-            Musica(
-                id: getMusicaResponse.musicaResponse.id,
-                artista: getMusicaResponse.musicaResponse.artista,
-                titulo: getMusicaResponse.musicaResponse.titulo,
-                album: getMusicaResponse.musicaResponse.album,
-                categoria: getMusicaResponse.musicaResponse.categoria
-            )
+    func getMusica(idMusica: Int) -> AnyPublisher<[Musica], Error> {
+        return webServiceAPI.fetchObtenerListaDeMusicasPorID(idDeMusica: idMusica).map { (getMusicaResponse:GetMusicaResponse) in
+            getMusicaResponse.musicasResponse.map { (musicaResponse:MusicaResponse) in
+                Musica(
+                    id: musicaResponse.id,
+                    artista: musicaResponse.artista,
+                    titulo: musicaResponse.titulo,
+                    album: musicaResponse.album,
+                    urlDeMusica: musicaResponse.urlDeMusica,
+                    bloqueado: true
+                )
+            }
         }
         .eraseToAnyPublisher()
     }

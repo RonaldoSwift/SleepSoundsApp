@@ -11,7 +11,7 @@ import SDWebImageSwiftUI
 
 struct DestacadoListComponent: View {
     
-    var arrayDestacado: [Destacado]
+    @Binding var arrayDestacado: [Destacado]
     
     var body: some View {
         HStack {
@@ -21,7 +21,7 @@ struct DestacadoListComponent: View {
                 } label: {
                     ZStack {
                         VStack(alignment: .leading, spacing: 8) {
-                            WebImage(url: URL(string: destacado.imagen))
+                            WebImage(url: URL(string: "\(destacado.imagen)"))
                                 .cornerRadius(10)
                                 .overlay(
                                     Button(action: {
@@ -38,7 +38,7 @@ struct DestacadoListComponent: View {
                                     }
                                         .padding(8), alignment: .topLeading
                                 )
-                            Text(destacado.nombre)
+                            Text("\(destacado.nombre)")
                                 .font(.headline)
                                 .foregroundColor(Color.white)
                                 .lineLimit(1)

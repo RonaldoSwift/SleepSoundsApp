@@ -9,11 +9,11 @@ import Foundation
 import SwiftUI
 import SDWebImageSwiftUI
 
-struct MusicaCardComponente: View {
+struct PaqueteCardComponente: View {
     
     var onClickInCardPaquete: () -> Void
     var onClickInPlay: () -> Void
-    var arrayDePaquetes: [Paquete]
+    @Binding var arrayDePaquetes: [Paquete]
     
     private let columns = [GridItem(.flexible()), GridItem(.flexible())]
     
@@ -25,7 +25,7 @@ struct MusicaCardComponente: View {
                 } label: {
                     ZStack {
                         VStack(alignment: .leading, spacing: 8) {
-                            WebImage(url: URL(string: paquete.imagen))
+                            WebImage(url: URL(string: "\(paquete.imagen)"))
                                 .cornerRadius(10)
                                 .overlay(
                                     Button(action: {
@@ -42,12 +42,12 @@ struct MusicaCardComponente: View {
                                     }
                                         .padding(8), alignment: .topLeading
                                 )
-                            Text(paquete.nombre)
+                            Text("\(paquete.nombre)")
                                 .font(.headline)
                                 .foregroundColor(Color.white)
                                 .lineLimit(1)
                             HStack {
-                                Text(paquete.descripcion)
+                                Text("\(paquete.cantidadDeMusica)")
                                 Text(". \(paquete.nombreDeCategoria)")
                             }
                             .font(.subheadline)

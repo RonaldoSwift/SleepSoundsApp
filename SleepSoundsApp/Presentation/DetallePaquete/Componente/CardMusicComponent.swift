@@ -1,19 +1,10 @@
-//
-//  CardMusicComponent.swift
-//  SleepSoundsApp
-//
-//  Created by Ronaldo Andre on 28/11/24.
-//
-
 import Foundation
 import SwiftUI
 
 struct CardMusicComponent: View {
     
-    var artista: String
-    var titulo: String
-    var album: String
-    var categoria: String
+    var arrayMusica: [Musica] = []
+    var onClickInPlay: (Musica) -> Void
     
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
@@ -21,92 +12,36 @@ struct CardMusicComponent: View {
                 .font(.system(size: 14))
                 .foregroundColor(Color.colorTextSlider)
             
-            HStack {
-                Text("01")
-                    .foregroundColor(Color.colorTextSlider)
-                
-                Button(action: {
+            ForEach(Array(arrayMusica.enumerated()), id: \.element.id) { index, musica in
+                HStack {
+                    // Número dinámico, formateado con dos dígitos
+                    Text(String(format: "%02d", index + 1))
+                        .foregroundColor(Color.colorTextSlider)
                     
-                }) {
-                    ZStack {
-                        Circle()
-                            .fill(Color.black.opacity(0.5))
-                            .frame(width: 40, height: 40)
-                        Image(systemName: "play.fill")
-                            .foregroundColor(.white)
-                            .frame(width: 24, height: 24)
+                    Button(action: {
+                        onClickInPlay(musica)
+                    }) {
+                        ZStack {
+                            Circle()
+                                .fill(Color.black.opacity(0.5))
+                                .frame(width: 40, height: 40)
+                            if(musica.bloqueado == true){
+                                Image(systemName: "star.fill")
+                                    .foregroundColor(.white)
+                                    .frame(width: 24, height: 24)
+                            } else {
+                                Image(systemName: "play.fill")
+                                    .foregroundColor(.white)
+                                    .frame(width: 24, height: 24)
+                            }
+                        }
                     }
+                    .padding(8)
+                    Text(musica.titulo)
+                        .font(.system(size: 18))
+                        .foregroundColor(.white)
+                    Spacer()
                 }
-                .padding(8)
-                Text(artista)
-                    .font(.system(size: 18))
-                    .foregroundColor(.white)
-                Spacer()
-            }
-            
-            HStack {
-                Text("02")
-                    .foregroundColor(Color.colorTextSlider)
-                
-                Button(action: {
-                    
-                }) {
-                    ZStack {
-                        Circle()
-                            .fill(Color.black.opacity(0.5))
-                            .frame(width: 40, height: 40)
-                        Image(ImageResource.pause)
-                            .foregroundColor(.white)
-                            .frame(width: 24, height: 24)
-                    }
-                }
-                .padding(8)
-                Text(titulo)
-                    .font(.system(size: 18))
-                    .foregroundColor(.white)
-            }
-            
-            HStack {
-                Text("03")
-                    .foregroundColor(Color.colorTextSlider)
-                
-                Button(action: {
-                    
-                }) {
-                    ZStack {
-                        Circle()
-                            .fill(Color.black.opacity(0.5))
-                            .frame(width: 40, height: 40)
-                        Image(ImageResource.candado)
-                            .foregroundColor(.white)
-                            .frame(width: 24, height: 24)
-                    }
-                }
-                .padding(8)
-                Text(album)
-                    .font(.system(size: 18))
-                    .foregroundColor(.white)
-            }
-            HStack {
-                Text("04")
-                    .foregroundColor(Color.colorTextSlider)
-                
-                Button(action: {
-                    
-                }) {
-                    ZStack {
-                        Circle()
-                            .fill(Color.black.opacity(0.5))
-                            .frame(width: 40, height: 40)
-                        Image(ImageResource.candado)
-                            .foregroundColor(.white)
-                            .frame(width: 24, height: 24)
-                    }
-                }
-                .padding(8)
-                Text(categoria)
-                    .font(.system(size: 18))
-                    .foregroundColor(.white)
             }
         }
         .padding()

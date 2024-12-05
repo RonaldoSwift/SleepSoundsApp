@@ -23,6 +23,9 @@ struct ModalDetallePaqueteView: View {
     @State private var mensajeDeAlerta: String = ""
     @State private var tituloDeAlerta: String = "Error"
     
+    
+    var onClickInPlay: () -> Void
+    
     @State private var detalleDePaquete: Detalle = Detalle(
         id: 0,
         nombre: "",
@@ -33,13 +36,8 @@ struct ModalDetallePaqueteView: View {
         detalle: ""
     )
     
-    @State private var musicaDeDetalle: Musica = Musica(
-        id: 0,
-        artista: "",
-        titulo: "",
-        album: "",
-        categoria: ""
-    )
+    @State private var musicasLista: [Musica] = []
+    
     @State private var arrayDestacado: [Destacado] = []
     
     var body: some View {
@@ -77,10 +75,10 @@ struct ModalDetallePaqueteView: View {
                             ProgressView()
                         } else {
                             CardMusicComponent(
-                                artista: musicaDeDetalle.artista,
-                                titulo: musicaDeDetalle.titulo,
-                                album: musicaDeDetalle.album,
-                                categoria: musicaDeDetalle.categoria
+                                arrayMusica: musicasLista,
+                                onClickInPlay: {musica in
+                                    onClickInPlay()
+                                }
                             )
                         }
                         
@@ -90,7 +88,7 @@ struct ModalDetallePaqueteView: View {
                             Text("Featured On")
                                 .font(.title3)
                                 .foregroundColor(Color.white)
-                            DestacadoListComponent(arrayDestacado: arrayDestacado)
+                            DestacadoListComponent(arrayDestacado: $arrayDestacado)
                         }
                     }
                     .padding()
@@ -110,7 +108,7 @@ struct ModalDetallePaqueteView: View {
         }
         .onAppear{
             detalleDePaqueteViewModel.startDetalleDeMusica(idDetalle: 1)
-            detalleDePaqueteViewModel.startMusica()
+            detalleDePaqueteViewModel.startMusica(idDeMusica: 1)
             detalleDePaqueteViewModel.startPaqueteDestacado()
         }
         .onReceive(detalleDePaqueteViewModel.$detalleDePqueteUiState) { detalleDePaqueteUiState in
@@ -132,17 +130,13 @@ struct ModalDetallePaqueteView: View {
             case .successDetalle(let detalle):
                 showLoadingDetalle = false
                 detalleDePaquete = detalle
-            case .successMusica(let musica):
+            case .successMusica(let musicas):
                 showLoadingMusica = false
-                musicaDeDetalle = musica
+                musicasLista = musicas
             case .successDestacado(let destacados):
                 showLoadingDestacado = false
                 arrayDestacado = destacados
             }
         }
     }
-}
-
-#Preview {
-    ModalDetallePaqueteView()
 }
