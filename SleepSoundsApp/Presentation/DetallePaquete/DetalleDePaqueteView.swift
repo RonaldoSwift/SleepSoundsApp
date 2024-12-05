@@ -9,17 +9,23 @@ import SwiftUI
 
 struct DetalleDePaqueteView: View {
     
-    @State private var showModal = false
-    
+    var onClickOnAppear: () -> Void
+
     var body: some View {
         if #available(iOS 16.0, *) {
             DetalleDePaqueteViewiOS16()
+                .onAppear(perform: {
+                    onClickOnAppear()
+                })
         } else {
             DetalleDePaqueteViewiOS15()
+                .onAppear(perform: {
+                    onClickOnAppear()
+                })
         }
     }
 }
 
 #Preview {
-    DetalleDePaqueteView()
+    DetalleDePaqueteView(onClickOnAppear: {})
 }

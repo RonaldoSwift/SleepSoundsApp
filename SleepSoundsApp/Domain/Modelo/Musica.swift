@@ -12,5 +12,6 @@ struct Musica: Identifiable {
     var artista: String
     var titulo: String
     var album: String
-    var categoria: String
+    var urlDeMusica: String
+    var bloqueado: Bool
 }

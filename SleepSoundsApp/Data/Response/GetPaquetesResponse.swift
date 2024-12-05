@@ -22,7 +22,7 @@ struct ListaDePaquetes: Decodable {
     var nombre: String
     var cantidadDeMusica: Int
     var tiempoDeDuracion: Int
-    var nombreDeCategoria: String
+    var nombreCategoria: String
     
     private enum CodingKeys: String, CodingKey {
         case id
@@ -30,6 +30,6 @@ struct ListaDePaquetes: Decodable {
         case nombre
         case cantidadDeMusica
         case tiempoDeDuracion
-        case nombreDeCategoria
+        case nombreCategoria
     }
 }

@@ -10,7 +10,7 @@ import Combine
 
 class WebServiceAPI {
     
-    func fetchObtenerListaDeMusicaDiscover() -> AnyPublisher<GetPaquetesResponse,Error> {
+    func fetchObtenerListaDePaquetes() -> AnyPublisher<GetPaquetesResponse,Error> {
         guard let urlComponnets = URLComponents(string: "http://192.168.1.58:7023/obtenerListaDePaquetes") else {
             return Fail(error: WebServiceError.errorURL)
                 .eraseToAnyPublisher()
@@ -76,8 +76,8 @@ class WebServiceAPI {
             .eraseToAnyPublisher()
     }
     
-    func fetchObtenerMusica() -> AnyPublisher<GetMusicaResponse,Error> {
-        guard let urlComponnets = URLComponents(string: "http://192.168.1.58:7023/obtenerMusica") else {
+    func fetchObtenerListaDeMusicasPorID(idDeMusica: Int) -> AnyPublisher<GetMusicaResponse,Error> {
+        guard let urlComponnets = URLComponents(string: "http://192.168.1.58:7023/obtenerMusicasPorId?idDeMusica=\(idDeMusica)") else {
             return Fail(error: WebServiceError.errorURL)
                 .eraseToAnyPublisher()
         }

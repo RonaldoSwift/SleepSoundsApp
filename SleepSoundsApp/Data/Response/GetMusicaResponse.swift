@@ -9,10 +9,10 @@ import Foundation
 
 struct GetMusicaResponse: Decodable {
     
-    var musicaResponse: MusicaResponse
+    var musicasResponse: [MusicaResponse]
     
     private enum CodingKeys: String, CodingKey {
-        case musicaResponse = "musica"
+        case musicasResponse = "listaDeMusicasEntity"
     }
 }
 
@@ -21,13 +21,15 @@ struct MusicaResponse: Decodable {
     var artista: String
     var titulo: String
     var album: String
-    var categoria: String
+    var idDePaquete: Int
+    var urlDeMusica: String
     
     private enum CodingKeys: String, CodingKey {
         case id
         case artista
         case titulo
         case album
-        case categoria
+        case idDePaquete
+        case urlDeMusica
     }
 }

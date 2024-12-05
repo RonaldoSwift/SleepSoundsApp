@@ -21,4 +21,10 @@ extension View {
             SheetModifier(presentingView: AnyView(view), isPresented: isPresented)
         )
     }
+    
+    func fullSheet(_ view: any View, _ isPresented: Binding<Bool>) -> some View {
+        modifier(
+            SheetFullModifier(presentingView: AnyView(view), isPresented: isPresented)
+        )
+    }
 }

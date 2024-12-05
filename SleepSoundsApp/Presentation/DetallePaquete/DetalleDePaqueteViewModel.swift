@@ -38,9 +38,9 @@ final class DetalleDePaqueteViewModel: ObservableObject {
             .store(in: &cancelLables)
     }
     
-    func startMusica() {
+    func startMusica(idDeMusica:Int) {
         detalleDePqueteUiState = DetalleDePqueteUiState.cargandoMusica
-        repository.getMusica()
+        repository.getMusica(idMusica: idDeMusica)
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { completion in
                 switch (completion) {
@@ -49,8 +49,8 @@ final class DetalleDePaqueteViewModel: ObservableObject {
                 case .failure(let error):
                     self.detalleDePqueteUiState = DetalleDePqueteUiState.error("Ocurrio un error \(error)")
                 }
-            }, receiveValue: { (musica: Musica) in
-                self.detalleDePqueteUiState = DetalleDePqueteUiState.successMusica(musica)
+            }, receiveValue: { (musicas: [Musica]) in
+                self.detalleDePqueteUiState = DetalleDePqueteUiState.successMusica(musicas)
             })
             .store(in: &cancelLables)
     }
