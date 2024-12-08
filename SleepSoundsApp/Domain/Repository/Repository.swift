@@ -86,4 +86,44 @@ class Repository {
         }
         .eraseToAnyPublisher()
     }
+    
+    func getChild() -> AnyPublisher<[Childd], Error> {
+        return webServiceAPI.fetchObtenerListaChild().map { (getChildResponse:GetChildResponse) in
+            getChildResponse.listaDeChild.map { (listaDeChild:ListaDeChild) in
+                Childd(
+                    id: listaDeChild.id,
+                    imagen: listaDeChild.imagen,
+                    nombre: listaDeChild.nombre
+                )
+            }
+        }
+        .eraseToAnyPublisher()
+    }
+    
+    func getNature() ->AnyPublisher<[Nature], Error> {
+        return webServiceAPI.fetchObtenerListaNature().map { (getNatureResponse:GetNatureResponse) in
+            getNatureResponse.listaDeNature.map { (listaDeNature:ListaDeNature) in
+                Nature(
+                    id: listaDeNature.id,
+                    imagen: listaDeNature.imagen,
+                    nombre: listaDeNature.nombre
+                )
+            }
+        }
+        .eraseToAnyPublisher()
+    }
+    
+    func getAnimal() -> AnyPublisher<[Animal], Error> {
+        return webServiceAPI.fetchObtenerListaAnimal().map { (getAnimalResponse:GetAnimalResponse) in
+            getAnimalResponse.listaDeAnimal.map { (listaDeAnimal:ListaDeAnimal) in
+                Animal(
+                    id: listaDeAnimal.id,
+                    imagen: listaDeAnimal.imagen,
+                    nombre: listaDeAnimal.nombre
+                )
+            }
+        }
+        .eraseToAnyPublisher()
+    }
+    
 }

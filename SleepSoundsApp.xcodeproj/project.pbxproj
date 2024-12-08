@@ -39,6 +39,9 @@
 		FA5DD8FD2CF7665A0081886D /* SheetModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5DD8FC2CF7665A0081886D /* SheetModifier.swift */; };
 		FA5DD8FF2CF784B60081886D /* DetalleDePaqueteViewiOS16.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5DD8FE2CF784B60081886D /* DetalleDePaqueteViewiOS16.swift */; };
 		FA5DD9012CF7854F0081886D /* DetalleDePaqueteViewiOS15.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5DD9002CF7854F0081886D /* DetalleDePaqueteViewiOS15.swift */; };
+		FA674EED2D05575200AEBAE9 /* CardChildListComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA674EEC2D05575200AEBAE9 /* CardChildListComponent.swift */; };
+		FA674EEF2D05576200AEBAE9 /* CardNatureListComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA674EEE2D05576200AEBAE9 /* CardNatureListComponent.swift */; };
+		FA674EF12D05577000AEBAE9 /* CardAnimalListComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA674EF02D05577000AEBAE9 /* CardAnimalListComponent.swift */; };
 		FA8D9BF52CF8BE8200C00C04 /* ButonCapsulePlayAndStartComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D9BF42CF8BE8200C00C04 /* ButonCapsulePlayAndStartComponent.swift */; };
 		FA8D9BF72CF92DBA00C00C04 /* CardMusicComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D9BF62CF92DBA00C00C04 /* CardMusicComponent.swift */; };
 		FA8D9BF92CF9410B00C00C04 /* DestacadoListComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D9BF82CF9410B00C00C04 /* DestacadoListComponent.swift */; };
@@ -63,6 +66,14 @@
 		FA91F8952CED343C0004AC6D /* SF-Pro-Rounded-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = FA91F88B2CED343C0004AC6D /* SF-Pro-Rounded-Thin.otf */; };
 		FA91F8992CED55560004AC6D /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91F8982CED55560004AC6D /* DiscoverView.swift */; };
 		FA91F89C2CED62FE0004AC6D /* CustomTabIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91F89B2CED62FE0004AC6D /* CustomTabIndicator.swift */; };
+		FAA218B82D03DB8900358011 /* GetChildResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA218B72D03DB8900358011 /* GetChildResponse.swift */; };
+		FAA218BA2D03DDDB00358011 /* GetNatureResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA218B92D03DDDB00358011 /* GetNatureResponse.swift */; };
+		FAA218BC2D03DE3200358011 /* GetAnimalResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA218BB2D03DE3200358011 /* GetAnimalResponse.swift */; };
+		FAA218BE2D03E03200358011 /* Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA218BD2D03E03200358011 /* Child.swift */; };
+		FAA218C02D03E03C00358011 /* Nature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA218BF2D03E03C00358011 /* Nature.swift */; };
+		FAA218C22D03E04700358011 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA218C12D03E04700358011 /* Animal.swift */; };
+		FAA218C42D03E69700358011 /* ComposerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA218C32D03E69700358011 /* ComposerViewModel.swift */; };
+		FAA218C62D03E6B700358011 /* ComposerUiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA218C52D03E6B700358011 /* ComposerUiState.swift */; };
 		FAA5FAD22D022845001B3702 /* SharedViewModelMusica.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5FAD12D022845001B3702 /* SharedViewModelMusica.swift */; };
 /* End PBXBuildFile section */
 
@@ -102,6 +113,9 @@
 		FA5DD8FC2CF7665A0081886D /* SheetModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetModifier.swift; sourceTree = "<group>"; };
 		FA5DD8FE2CF784B60081886D /* DetalleDePaqueteViewiOS16.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleDePaqueteViewiOS16.swift; sourceTree = "<group>"; };
 		FA5DD9002CF7854F0081886D /* DetalleDePaqueteViewiOS15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleDePaqueteViewiOS15.swift; sourceTree = "<group>"; };
+		FA674EEC2D05575200AEBAE9 /* CardChildListComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardChildListComponent.swift; sourceTree = "<group>"; };
+		FA674EEE2D05576200AEBAE9 /* CardNatureListComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardNatureListComponent.swift; sourceTree = "<group>"; };
+		FA674EF02D05577000AEBAE9 /* CardAnimalListComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardAnimalListComponent.swift; sourceTree = "<group>"; };
 		FA8D9BF42CF8BE8200C00C04 /* ButonCapsulePlayAndStartComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButonCapsulePlayAndStartComponent.swift; sourceTree = "<group>"; };
 		FA8D9BF62CF92DBA00C00C04 /* CardMusicComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMusicComponent.swift; sourceTree = "<group>"; };
 		FA8D9BF82CF9410B00C00C04 /* DestacadoListComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestacadoListComponent.swift; sourceTree = "<group>"; };
@@ -127,6 +141,14 @@
 		FA91F8962CED34F00004AC6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA91F8982CED55560004AC6D /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
 		FA91F89B2CED62FE0004AC6D /* CustomTabIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabIndicator.swift; sourceTree = "<group>"; };
+		FAA218B72D03DB8900358011 /* GetChildResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetChildResponse.swift; sourceTree = "<group>"; };
+		FAA218B92D03DDDB00358011 /* GetNatureResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNatureResponse.swift; sourceTree = "<group>"; };
+		FAA218BB2D03DE3200358011 /* GetAnimalResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAnimalResponse.swift; sourceTree = "<group>"; };
+		FAA218BD2D03E03200358011 /* Child.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Child.swift; sourceTree = "<group>"; };
+		FAA218BF2D03E03C00358011 /* Nature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nature.swift; sourceTree = "<group>"; };
+		FAA218C12D03E04700358011 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		FAA218C32D03E69700358011 /* ComposerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposerViewModel.swift; sourceTree = "<group>"; };
+		FAA218C52D03E6B700358011 /* ComposerUiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposerUiState.swift; sourceTree = "<group>"; };
 		FAA5FAD12D022845001B3702 /* SharedViewModelMusica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedViewModelMusica.swift; sourceTree = "<group>"; };
 		FAC7A0D12CEC18EC008ECFDE /* SleepSoundsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepSoundsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -202,6 +224,9 @@
 				FA46928D2CF620F000BD1DDB /* GetDetallePaqueteResponse.swift */,
 				FA46928F2CF623BE00BD1DDB /* GetMusicaResponse.swift */,
 				FA4692912CF6247200BD1DDB /* GetDestacadoResponse.swift */,
+				FAA218B72D03DB8900358011 /* GetChildResponse.swift */,
+				FAA218B92D03DDDB00358011 /* GetNatureResponse.swift */,
+				FAA218BB2D03DE3200358011 /* GetAnimalResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -221,6 +246,9 @@
 				FA4692932CF628AE00BD1DDB /* Detalle.swift */,
 				FA4692952CF628E500BD1DDB /* Musica.swift */,
 				FA4692972CF6290C00BD1DDB /* Destacado.swift */,
+				FAA218BD2D03E03200358011 /* Child.swift */,
+				FAA218BF2D03E03C00358011 /* Nature.swift */,
+				FAA218C12D03E04700358011 /* Animal.swift */,
 			);
 			path = Modelo;
 			sourceTree = "<group>";
@@ -302,7 +330,10 @@
 		FA4692862CF6171800BD1DDB /* Composer */ = {
 			isa = PBXGroup;
 			children = (
+				FAA218C72D040F8900358011 /* Componente */,
 				FA4692872CF6173200BD1DDB /* ComposerView.swift */,
+				FAA218C32D03E69700358011 /* ComposerViewModel.swift */,
+				FAA218C52D03E6B700358011 /* ComposerUiState.swift */,
 			);
 			path = Composer;
 			sourceTree = "<group>";
@@ -428,6 +459,16 @@
 			isa = PBXGroup;
 			children = (
 				FA91F89B2CED62FE0004AC6D /* CustomTabIndicator.swift */,
+			);
+			path = Componente;
+			sourceTree = "<group>";
+		};
+		FAA218C72D040F8900358011 /* Componente */ = {
+			isa = PBXGroup;
+			children = (
+				FA674EEC2D05575200AEBAE9 /* CardChildListComponent.swift */,
+				FA674EEE2D05576200AEBAE9 /* CardNatureListComponent.swift */,
+				FA674EF02D05577000AEBAE9 /* CardAnimalListComponent.swift */,
 			);
 			path = Componente;
 			sourceTree = "<group>";
@@ -585,28 +626,39 @@
 				FA5DD8FD2CF7665A0081886D /* SheetModifier.swift in Sources */,
 				FA91F8812CECEF5B0004AC6D /* SliderView.swift in Sources */,
 				FA0822662CEEB7CF00386BE5 /* DiscoverViewModel.swift in Sources */,
+				FA674EED2D05575200AEBAE9 /* CardChildListComponent.swift in Sources */,
 				FA1B3ABE2CECDE4100E4A997 /* SplashView.swift in Sources */,
 				FA08225E2CEE972000386BE5 /* GetPaquetesResponse.swift in Sources */,
+				FAA218BA2D03DDDB00358011 /* GetNatureResponse.swift in Sources */,
 				FA0822512CEE2FEE00386BE5 /* MenuRootView.swift in Sources */,
+				FAA218C02D03E03C00358011 /* Nature.swift in Sources */,
 				FA4692962CF628E500BD1DDB /* Musica.swift in Sources */,
 				FA91F87E2CECED650004AC6D /* SliderRootView.swift in Sources */,
 				FA46928E2CF620F000BD1DDB /* GetDetallePaqueteResponse.swift in Sources */,
 				FA5DD9012CF7854F0081886D /* DetalleDePaqueteViewiOS15.swift in Sources */,
 				FA4692982CF6290C00BD1DDB /* Destacado.swift in Sources */,
+				FAA218BC2D03DE3200358011 /* GetAnimalResponse.swift in Sources */,
 				FA8FADA52CFA37A600D4B745 /* MusicMediaPlayer.swift in Sources */,
 				FA0822642CEEB3AE00386BE5 /* Paquete.swift in Sources */,
 				FA8D9C002CF95A4800C00C04 /* SheetFullModifier.swift in Sources */,
 				FA46929E2CF62D1000BD1DDB /* DetalleDePqueteUiState.swift in Sources */,
+				FA674EF12D05577000AEBAE9 /* CardAnimalListComponent.swift in Sources */,
 				FA91F8782CECEC400004AC6D /* View+Extension.swift in Sources */,
 				FA0822592CEE372A00386BE5 /* WebServiceAPI.swift in Sources */,
+				FAA218BE2D03E03200358011 /* Child.swift in Sources */,
 				FA4692922CF6247200BD1DDB /* GetDestacadoResponse.swift in Sources */,
 				FA8D9BF92CF9410B00C00C04 /* DestacadoListComponent.swift in Sources */,
+				FAA218C42D03E69700358011 /* ComposerViewModel.swift in Sources */,
+				FA674EEF2D05576200AEBAE9 /* CardNatureListComponent.swift in Sources */,
 				FA4692942CF628AE00BD1DDB /* Detalle.swift in Sources */,
 				FA8FADA72CFA390B00D4B745 /* SleepPlayerViewModel.swift in Sources */,
 				FA91F8992CED55560004AC6D /* DiscoverView.swift in Sources */,
 				FA4692902CF623BE00BD1DDB /* GetMusicaResponse.swift in Sources */,
 				FA08226D2CEED52700386BE5 /* CategoriaDiscover.swift in Sources */,
+				FAA218C22D03E04700358011 /* Animal.swift in Sources */,
+				FAA218C62D03E6B700358011 /* ComposerUiState.swift in Sources */,
 				FA8D9BF72CF92DBA00C00C04 /* CardMusicComponent.swift in Sources */,
+				FAA218B82D03DB8900358011 /* GetChildResponse.swift in Sources */,
 				FA91F89C2CED62FE0004AC6D /* CustomTabIndicator.swift in Sources */,
 				FAA5FAD22D022845001B3702 /* SharedViewModelMusica.swift in Sources */,
 				FA4692882CF6173200BD1DDB /* ComposerView.swift in Sources */,

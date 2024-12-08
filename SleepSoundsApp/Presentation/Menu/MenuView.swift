@@ -54,18 +54,20 @@ struct MenuView: View {
                     $showModalPlayMusic
                 )
             }
-            
             .tabItem {
                 Image(systemName: "moon.stars")
                 Text("Discover")
             }
             
-            ComposerView()
-                .tabItem {
-                    Image(ImageResource.composerIcono)
-                        .renderingMode(.template)
-                    Text("Composer")
-                }
+            NavigationView {
+                ComposerView()
+            }
+            .tabItem {
+                Image(ImageResource.composerIcono)
+                    .renderingMode(.template)
+                Text("Composer")
+            }
+            
             ProfileView()
                 .tabItem {
                     Image(ImageResource.profileIcono)
