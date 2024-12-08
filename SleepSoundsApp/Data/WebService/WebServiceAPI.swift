@@ -142,6 +142,105 @@ class WebServiceAPI {
             .eraseToAnyPublisher()
     }
     
+    func fetchObtenerListaChild() -> AnyPublisher<GetChildResponse, Error> {
+        guard let urlComponnets = URLComponents(string: "http://192.168.1.58:7023/obtenerListaDeChild") else {
+            return Fail(error: WebServiceError.errorURL)
+                .eraseToAnyPublisher()
+        }
+        guard let validUrl = urlComponnets.url else {
+            return Fail(error: WebServiceError.errorDesconocido)
+                .eraseToAnyPublisher()
+        }
+        
+        var urlRequest = URLRequest(
+            url: validUrl
+        )
+        
+        urlRequest.httpMethod = "GET"
+        urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        return URLSession.shared.dataTaskPublisher(for: urlRequest)
+            .tryMap { (data: Data, response: URLResponse) in
+                guard let httpResponse = response as? HTTPURLResponse else {
+                    throw WebServiceError.errorDesconocido
+                }
+                if (200 ... 299 ~= httpResponse.statusCode) {
+                    return data
+                }
+                
+                let errorResponse = try JSONDecoder().decode(ErrorResponse.self, from: data)
+                throw WebServiceError.errorData(errorResponse.messages)
+            }
+            .decode(type: GetChildResponse.self, decoder: JSONDecoder())
+            .eraseToAnyPublisher()
+    }
+    
+    func fetchObtenerListaNature() -> AnyPublisher<GetNatureResponse, Error> {
+        guard let urlComponnets = URLComponents(string: "http://192.168.1.58:7023/obtenerListaDeNature") else {
+            return Fail(error: WebServiceError.errorURL)
+                .eraseToAnyPublisher()
+        }
+        guard let validUrl = urlComponnets.url else {
+            return Fail(error: WebServiceError.errorDesconocido)
+                .eraseToAnyPublisher()
+        }
+        
+        var urlRequest = URLRequest(
+            url: validUrl
+        )
+        
+        urlRequest.httpMethod = "GET"
+        urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        return URLSession.shared.dataTaskPublisher(for: urlRequest)
+            .tryMap { (data: Data, response: URLResponse) in
+                guard let httpResponse = response as? HTTPURLResponse else {
+                    throw WebServiceError.errorDesconocido
+                }
+                if (200 ... 299 ~= httpResponse.statusCode) {
+                    return data
+                }
+                
+                let errorResponse = try JSONDecoder().decode(ErrorResponse.self, from: data)
+                throw WebServiceError.errorData(errorResponse.messages)
+            }
+            .decode(type: GetNatureResponse.self, decoder: JSONDecoder())
+            .eraseToAnyPublisher()
+    }
+    
+    func fetchObtenerListaAnimal() -> AnyPublisher<GetAnimalResponse, Error> {
+        guard let urlComponnets = URLComponents(string: "http://192.168.1.58:7023/obtenerListaDeAnimal") else {
+            return Fail(error: WebServiceError.errorURL)
+                .eraseToAnyPublisher()
+        }
+        guard let validUrl = urlComponnets.url else {
+            return Fail(error: WebServiceError.errorDesconocido)
+                .eraseToAnyPublisher()
+        }
+        
+        var urlRequest = URLRequest(
+            url: validUrl
+        )
+        
+        urlRequest.httpMethod = "GET"
+        urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        return URLSession.shared.dataTaskPublisher(for: urlRequest)
+            .tryMap { (data: Data, response: URLResponse) in
+                guard let httpResponse = response as? HTTPURLResponse else {
+                    throw WebServiceError.errorDesconocido
+                }
+                if (200 ... 299 ~= httpResponse.statusCode) {
+                    return data
+                }
+                
+                let errorResponse = try JSONDecoder().decode(ErrorResponse.self, from: data)
+                throw WebServiceError.errorData(errorResponse.messages)
+            }
+            .decode(type: GetAnimalResponse.self, decoder: JSONDecoder())
+            .eraseToAnyPublisher()
+    }
+    
     enum WebServiceError: Error, Equatable {
         case errorURL
         case urlInvalido
