@@ -40,6 +40,8 @@ struct ModalDetallePaqueteView: View {
     
     @State private var arrayDestacado: [Destacado] = []
     
+    @EnvironmentObject private var sharedPaqueteViewModel : SharedPaqueteViewModel
+    
     var body: some View {
         ZStack {
             Color(ColorResource.colorFondo)
@@ -107,7 +109,7 @@ struct ModalDetallePaqueteView: View {
             )
         }
         .onAppear{
-            detalleDePaqueteViewModel.startDetalleDeMusica(idDetalle: 1)
+            detalleDePaqueteViewModel.startDetalleDeMusica(idDetalle: sharedPaqueteViewModel.paquete?.id ?? 0)
             detalleDePaqueteViewModel.startMusica(idDeMusica: 1)
             detalleDePaqueteViewModel.startPaqueteDestacado()
         }

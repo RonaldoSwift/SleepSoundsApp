@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct CardNatureListComponent: View {
     
@@ -35,9 +36,7 @@ struct CardNatureListComponent: View {
                             }
                         }) {
                             VStack(spacing: 0) {
-                                Image(nature.imagen)
-                                    .resizable()
-                                    .scaledToFill()
+                                WebImage(url: URL(string: "\(nature.imagen)"))
                                     .frame(width: 100, height: 100)
                                     .clipShape(RoundedRectangle(cornerRadius: 10))
                                 

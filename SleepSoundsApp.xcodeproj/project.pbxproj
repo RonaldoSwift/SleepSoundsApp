@@ -66,6 +66,7 @@
 		FA91F8952CED343C0004AC6D /* SF-Pro-Rounded-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = FA91F88B2CED343C0004AC6D /* SF-Pro-Rounded-Thin.otf */; };
 		FA91F8992CED55560004AC6D /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91F8982CED55560004AC6D /* DiscoverView.swift */; };
 		FA91F89C2CED62FE0004AC6D /* CustomTabIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91F89B2CED62FE0004AC6D /* CustomTabIndicator.swift */; };
+		FA9213C52D06B73300E38342 /* SharedPaqueteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9213C42D06B73300E38342 /* SharedPaqueteViewModel.swift */; };
 		FAA218B82D03DB8900358011 /* GetChildResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA218B72D03DB8900358011 /* GetChildResponse.swift */; };
 		FAA218BA2D03DDDB00358011 /* GetNatureResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA218B92D03DDDB00358011 /* GetNatureResponse.swift */; };
 		FAA218BC2D03DE3200358011 /* GetAnimalResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA218BB2D03DE3200358011 /* GetAnimalResponse.swift */; };
@@ -141,6 +142,7 @@
 		FA91F8962CED34F00004AC6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA91F8982CED55560004AC6D /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
 		FA91F89B2CED62FE0004AC6D /* CustomTabIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabIndicator.swift; sourceTree = "<group>"; };
+		FA9213C42D06B73300E38342 /* SharedPaqueteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedPaqueteViewModel.swift; sourceTree = "<group>"; };
 		FAA218B72D03DB8900358011 /* GetChildResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetChildResponse.swift; sourceTree = "<group>"; };
 		FAA218B92D03DDDB00358011 /* GetNatureResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNatureResponse.swift; sourceTree = "<group>"; };
 		FAA218BB2D03DE3200358011 /* GetAnimalResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAnimalResponse.swift; sourceTree = "<group>"; };
@@ -292,6 +294,7 @@
 				FA91F8702CECE9210004AC6D /* Root */,
 				FA91F8742CECEB870004AC6D /* Navegacion */,
 				FAA5FAD12D022845001B3702 /* SharedViewModelMusica.swift */,
+				FA9213C42D06B73300E38342 /* SharedPaqueteViewModel.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -659,6 +662,7 @@
 				FAA218C62D03E6B700358011 /* ComposerUiState.swift in Sources */,
 				FA8D9BF72CF92DBA00C00C04 /* CardMusicComponent.swift in Sources */,
 				FAA218B82D03DB8900358011 /* GetChildResponse.swift in Sources */,
+				FA9213C52D06B73300E38342 /* SharedPaqueteViewModel.swift in Sources */,
 				FA91F89C2CED62FE0004AC6D /* CustomTabIndicator.swift in Sources */,
 				FAA5FAD22D022845001B3702 /* SharedViewModelMusica.swift in Sources */,
 				FA4692882CF6173200BD1DDB /* ComposerView.swift in Sources */,

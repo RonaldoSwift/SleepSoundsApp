@@ -14,6 +14,7 @@ struct PaqueteCardComponente: View {
     var onClickInCardPaquete: () -> Void
     var onClickInPlay: () -> Void
     @Binding var arrayDePaquetes: [Paquete]
+    @EnvironmentObject private var sharedPaqueteViewModel : SharedPaqueteViewModel
     
     private let columns = [GridItem(.flexible()), GridItem(.flexible())]
     
@@ -21,6 +22,7 @@ struct PaqueteCardComponente: View {
         LazyVGrid(columns: columns, spacing: 50) {
             ForEach(arrayDePaquetes, id: \.id) { paquete in
                 Button {
+                    sharedPaqueteViewModel.paquete = paquete
                     onClickInCardPaquete()
                 } label: {
                     ZStack {
