@@ -76,6 +76,8 @@
 		FAA218C42D03E69700358011 /* ComposerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA218C32D03E69700358011 /* ComposerViewModel.swift */; };
 		FAA218C62D03E6B700358011 /* ComposerUiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA218C52D03E6B700358011 /* ComposerUiState.swift */; };
 		FAA5FAD22D022845001B3702 /* SharedViewModelMusica.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5FAD12D022845001B3702 /* SharedViewModelMusica.swift */; };
+		FAA8EBDE2D0758240089D41D /* ButtonComponente.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8EBDD2D0758240089D41D /* ButtonComponente.swift */; };
+		FAA8EBE02D0761AB0089D41D /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8EBDF2D0761AB0089D41D /* FavoriteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -152,6 +154,8 @@
 		FAA218C32D03E69700358011 /* ComposerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposerViewModel.swift; sourceTree = "<group>"; };
 		FAA218C52D03E6B700358011 /* ComposerUiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposerUiState.swift; sourceTree = "<group>"; };
 		FAA5FAD12D022845001B3702 /* SharedViewModelMusica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedViewModelMusica.swift; sourceTree = "<group>"; };
+		FAA8EBDD2D0758240089D41D /* ButtonComponente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonComponente.swift; sourceTree = "<group>"; };
+		FAA8EBDF2D0761AB0089D41D /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
 		FAC7A0D12CEC18EC008ECFDE /* SleepSoundsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepSoundsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -344,7 +348,9 @@
 		FA4692892CF61A1900BD1DDB /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				FAA8EBDC2D0757C80089D41D /* Componente */,
 				FA46928A2CF61A2B00BD1DDB /* ProfileView.swift */,
+				FAA8EBDF2D0761AB0089D41D /* FavoriteView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -472,6 +478,14 @@
 				FA674EEC2D05575200AEBAE9 /* CardChildListComponent.swift */,
 				FA674EEE2D05576200AEBAE9 /* CardNatureListComponent.swift */,
 				FA674EF02D05577000AEBAE9 /* CardAnimalListComponent.swift */,
+			);
+			path = Componente;
+			sourceTree = "<group>";
+		};
+		FAA8EBDC2D0757C80089D41D /* Componente */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8EBDD2D0758240089D41D /* ButtonComponente.swift */,
 			);
 			path = Componente;
 			sourceTree = "<group>";
@@ -623,6 +637,7 @@
 				FA0822682CEEB8A700386BE5 /* DiscoverUiState.swift in Sources */,
 				FA08226B2CEEC71300386BE5 /* PaqueteCardComponente.swift in Sources */,
 				FA1B3AB82CECD9E700E4A997 /* SleepSoundsAppApp.swift in Sources */,
+				FAA8EBE02D0761AB0089D41D /* FavoriteView.swift in Sources */,
 				FA5DD8F72CF7629F0081886D /* MoodYDreamsComponent.swift in Sources */,
 				FA5DD8FF2CF784B60081886D /* DetalleDePaqueteViewiOS16.swift in Sources */,
 				FA0822542CEE300600386BE5 /* MenuView.swift in Sources */,
@@ -638,6 +653,7 @@
 				FA4692962CF628E500BD1DDB /* Musica.swift in Sources */,
 				FA91F87E2CECED650004AC6D /* SliderRootView.swift in Sources */,
 				FA46928E2CF620F000BD1DDB /* GetDetallePaqueteResponse.swift in Sources */,
+				FAA8EBDE2D0758240089D41D /* ButtonComponente.swift in Sources */,
 				FA5DD9012CF7854F0081886D /* DetalleDePaqueteViewiOS15.swift in Sources */,
 				FA4692982CF6290C00BD1DDB /* Destacado.swift in Sources */,
 				FAA218BC2D03DE3200358011 /* GetAnimalResponse.swift in Sources */,
