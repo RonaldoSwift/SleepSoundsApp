@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct CardAnimalListComponent: View {
     
@@ -35,9 +36,7 @@ struct CardAnimalListComponent: View {
                             }
                         }) {
                             VStack(spacing: 0) {
-                                Image(animal.imagen)
-                                    .resizable()
-                                    .scaledToFill()
+                                WebImage(url: URL(string: "\(animal.imagen)"))
                                     .frame(width: 100, height: 100)
                                     .clipShape(RoundedRectangle(cornerRadius: 10))
                                 

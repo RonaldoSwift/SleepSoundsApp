@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct CardChildListComponent: View {
     
@@ -36,9 +37,7 @@ struct CardChildListComponent: View {
                             }
                         }) {
                             VStack(spacing: 0) {
-                                Image(child.imagen)
-                                    .resizable()
-                                    .scaledToFill()
+                                WebImage(url: URL(string: "\(child.imagen)"))
                                     .frame(width: 100, height: 100)
                                     .clipShape(RoundedRectangle(cornerRadius: 10))
                                 
@@ -50,7 +49,7 @@ struct CardChildListComponent: View {
                                     .background(Color.colorBotonList)
                             }
                             .frame(width: 120)
-                            .background(                                selectedChildId == child.id ? Color.colorPushButton : Color.colorBoton
+                            .background(selectedChildId == child.id ? Color.colorPushButton : Color.colorBoton
                             )
                             .cornerRadius(15)
                             .shadow(color: .black.opacity(0.2), radius: 4, x: 0, y: 2)

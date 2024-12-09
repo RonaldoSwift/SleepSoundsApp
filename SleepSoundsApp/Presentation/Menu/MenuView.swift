@@ -7,10 +7,11 @@ struct MenuView: View {
     @State private var showModalPlayMusic = false
     
     var sharedMusicViewModel = SharedMusicViewModel()
+    var sharedPaqueteViewModel = SharedPaqueteViewModel()
     
     init() {
         //Navigation Bar
-        let navBarAppearence = UINavigationBarAppearance() // use as global variable, otherwise SwiftUI may cause problems.
+        let navBarAppearence = UINavigationBarAppearance()
         navBarAppearence.configureWithTransparentBackground()
         navBarAppearence.titleTextAttributes = [.foregroundColor: UIColor.white]
         navBarAppearence.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
@@ -53,6 +54,7 @@ struct MenuView: View {
                             id: 0, artista: "", titulo: "", album: "", urlDeMusica: "", bloqueado: false))),
                     $showModalPlayMusic
                 )
+                .environmentObject(sharedPaqueteViewModel)
             }
             .tabItem {
                 Image(systemName: "moon.stars")
