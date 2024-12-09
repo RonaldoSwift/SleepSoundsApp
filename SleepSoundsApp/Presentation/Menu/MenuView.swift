@@ -6,6 +6,8 @@ struct MenuView: View {
     @State private var showModalDetallePaquete = false
     @State private var showModalPlayMusic = false
     
+    @State private var navegarAFavorite: Bool = false
+    
     var sharedMusicViewModel = SharedMusicViewModel()
     var sharedPaqueteViewModel = SharedPaqueteViewModel()
     
@@ -37,7 +39,6 @@ struct MenuView: View {
                         //queda pendiente
                     }
                 )
-                
                 .navigation(DetalleDePaqueteView(onClickOnAppear: {
                     showModalDetallePaquete = true
                 }), $navegarADetalle)
@@ -70,12 +71,20 @@ struct MenuView: View {
                 Text("Composer")
             }
             
-            ProfileView()
-                .tabItem {
-                    Image(ImageResource.profileIcono)
-                        .renderingMode(.template)
-                    Text("Profile")
-                }
+            NavigationView {
+                ProfileView(
+                    onClickEnFavorite: {
+                        navegarAFavorite = true
+                    }
+                )
+                    .navigationTitle("Profile")
+                    .navigation(FavoriteView(), $navegarAFavorite)
+            }
+            .tabItem {
+                Image(ImageResource.profileIcono)
+                    .renderingMode(.template)
+                Text("Profile")
+            }
         }
         .background(Color.colorFondo.ignoresSafeArea())
     }
