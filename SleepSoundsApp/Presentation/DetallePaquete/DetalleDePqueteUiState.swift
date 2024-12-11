@@ -16,4 +16,6 @@ enum DetalleDePqueteUiState {
     case successDetalle(Detalle)
     case successMusica([Musica])
     case successDestacado([Destacado])
+    case guardadoEnFavoritoDB(String)
+    case errorGuardadoFavoritoDB(String)
 }

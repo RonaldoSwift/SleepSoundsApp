@@ -11,7 +11,12 @@ import SwiftUI
 struct SleepSoundsAppApp: App {
     
     @StateObject private var appRootManager = AppRootManager()
+    let sleepSoundsGRDB = SleepSoundsGRDB()
     
+    init() {
+        initGRDB()
+    }
+
     var body: some Scene {
         WindowGroup {
             Group {
@@ -26,5 +31,10 @@ struct SleepSoundsAppApp: App {
             }
             .environmentObject(appRootManager)
         }
+    }
+    
+    private func initGRDB() {
+        sleepSoundsGRDB.inicializadorBaseDeDatos()
+        sleepSoundsGRDB.crearTabla()
     }
 }

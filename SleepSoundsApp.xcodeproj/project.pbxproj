@@ -76,8 +76,10 @@
 		FAA218C42D03E69700358011 /* ComposerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA218C32D03E69700358011 /* ComposerViewModel.swift */; };
 		FAA218C62D03E6B700358011 /* ComposerUiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA218C52D03E6B700358011 /* ComposerUiState.swift */; };
 		FAA5FAD22D022845001B3702 /* SharedViewModelMusica.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5FAD12D022845001B3702 /* SharedViewModelMusica.swift */; };
+		FAA86F072D0889930037E0C6 /* PaqueteEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA86F062D0889930037E0C6 /* PaqueteEntity.swift */; };
 		FAA8EBDE2D0758240089D41D /* ButtonComponente.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8EBDD2D0758240089D41D /* ButtonComponente.swift */; };
 		FAA8EBE02D0761AB0089D41D /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8EBDF2D0761AB0089D41D /* FavoriteView.swift */; };
+		FAA8EBE32D0766000089D41D /* SleepSoundsGRDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8EBE22D0766000089D41D /* SleepSoundsGRDB.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -154,8 +156,10 @@
 		FAA218C32D03E69700358011 /* ComposerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposerViewModel.swift; sourceTree = "<group>"; };
 		FAA218C52D03E6B700358011 /* ComposerUiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposerUiState.swift; sourceTree = "<group>"; };
 		FAA5FAD12D022845001B3702 /* SharedViewModelMusica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedViewModelMusica.swift; sourceTree = "<group>"; };
+		FAA86F062D0889930037E0C6 /* PaqueteEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaqueteEntity.swift; sourceTree = "<group>"; };
 		FAA8EBDD2D0758240089D41D /* ButtonComponente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonComponente.swift; sourceTree = "<group>"; };
 		FAA8EBDF2D0761AB0089D41D /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
+		FAA8EBE22D0766000089D41D /* SleepSoundsGRDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepSoundsGRDB.swift; sourceTree = "<group>"; };
 		FAC7A0D12CEC18EC008ECFDE /* SleepSoundsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepSoundsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -199,6 +203,7 @@
 		FA0822552CEE36A300386BE5 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				FAA8EBE12D0765D70089D41D /* DataBase */,
 				FA08225C2CEE96B100386BE5 /* Response */,
 				FA0822572CEE370300386BE5 /* WebService */,
 			);
@@ -482,12 +487,29 @@
 			path = Componente;
 			sourceTree = "<group>";
 		};
+		FAA86F052D08897C0037E0C6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAA86F062D0889930037E0C6 /* PaqueteEntity.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		FAA8EBDC2D0757C80089D41D /* Componente */ = {
 			isa = PBXGroup;
 			children = (
 				FAA8EBDD2D0758240089D41D /* ButtonComponente.swift */,
 			);
 			path = Componente;
+			sourceTree = "<group>";
+		};
+		FAA8EBE12D0765D70089D41D /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				FAA86F052D08897C0037E0C6 /* Models */,
+				FAA8EBE22D0766000089D41D /* SleepSoundsGRDB.swift */,
+			);
+			path = DataBase;
 			sourceTree = "<group>";
 		};
 		FAC7A0C82CEC18EC008ECFDE = {
@@ -637,6 +659,7 @@
 				FA0822682CEEB8A700386BE5 /* DiscoverUiState.swift in Sources */,
 				FA08226B2CEEC71300386BE5 /* PaqueteCardComponente.swift in Sources */,
 				FA1B3AB82CECD9E700E4A997 /* SleepSoundsAppApp.swift in Sources */,
+				FAA8EBE32D0766000089D41D /* SleepSoundsGRDB.swift in Sources */,
 				FAA8EBE02D0761AB0089D41D /* FavoriteView.swift in Sources */,
 				FA5DD8F72CF7629F0081886D /* MoodYDreamsComponent.swift in Sources */,
 				FA5DD8FF2CF784B60081886D /* DetalleDePaqueteViewiOS16.swift in Sources */,
@@ -662,6 +685,7 @@
 				FA8D9C002CF95A4800C00C04 /* SheetFullModifier.swift in Sources */,
 				FA46929E2CF62D1000BD1DDB /* DetalleDePqueteUiState.swift in Sources */,
 				FA674EF12D05577000AEBAE9 /* CardAnimalListComponent.swift in Sources */,
+				FAA86F072D0889930037E0C6 /* PaqueteEntity.swift in Sources */,
 				FA91F8782CECEC400004AC6D /* View+Extension.swift in Sources */,
 				FA0822592CEE372A00386BE5 /* WebServiceAPI.swift in Sources */,
 				FAA218BE2D03E03200358011 /* Child.swift in Sources */,

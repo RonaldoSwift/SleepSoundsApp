@@ -12,7 +12,8 @@ struct ModalDetallePaqueteView: View {
     
     @State private var detalleDePaqueteViewModel = DetalleDePaqueteViewModel(
         repository: Repository(
-            webServiceAPI: WebServiceAPI()
+            webServiceAPI: WebServiceAPI(),
+            sleepSoundsGRDB: SleepSoundsGRDB()
         )
     )
     
@@ -138,6 +139,15 @@ struct ModalDetallePaqueteView: View {
             case .successDestacado(let destacados):
                 showLoadingDestacado = false
                 arrayDestacado = destacados
+            case .guardadoEnFavoritoDB(let mensajeGuardado):
+                tituloDeAlerta = "Correcto"
+                mensajeDeAlerta = "Genial!!"
+                mensajeDeAlerta = mensajeGuardado
+                showAlert = true
+            case .errorGuardadoFavoritoDB(let errorGuardado):
+                mensajeDeAlerta = "Error"
+                mensajeDeAlerta = errorGuardado
+                showAlert = true
             }
         }
     }

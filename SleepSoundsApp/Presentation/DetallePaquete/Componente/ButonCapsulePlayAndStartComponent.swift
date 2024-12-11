@@ -13,6 +13,8 @@ struct ButonCapsulePlayAndStartComponent: View {
     @State private var botonseleccionado: Bool = false
     @State private var isPlaySelected: Bool = false
     
+    //var onClickInFavorite: (Paquete) -> Void
+    
     var body: some View {
         HStack(spacing: 16) {
             Button {

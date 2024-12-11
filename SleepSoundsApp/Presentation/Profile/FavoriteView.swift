@@ -13,7 +13,18 @@ struct FavoriteView: View {
             Color(ColorResource.colorFondo)
                 .ignoresSafeArea()
             VStack {
-                Text("Favorite")
+                Image(ImageResource.favorit)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 85, height: 85)
+                Text("Favorite is Empty")
+                    .font(.system(size: 23))
+                    .foregroundColor(Color.white)
+                Text("Your favorite packs will be stored here")
+                    .multilineTextAlignment(.center)
+                    .font(.subheadline)
+                    .foregroundColor(Color.colorTextSlider)
+                    .padding(.bottom)
             }
         }
         .navigationTitle("Favorite")

@@ -11,7 +11,8 @@ struct ComposerView: View {
     
     @State private var composerViewModel = ComposerViewModel(
         repository: Repository(
-            webServiceAPI: WebServiceAPI()
+            webServiceAPI: WebServiceAPI(),
+            sleepSoundsGRDB: SleepSoundsGRDB()
         )
     )
     
