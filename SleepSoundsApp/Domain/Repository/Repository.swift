@@ -9,12 +9,16 @@ import Foundation
 import Combine
 
 class Repository {
+    
     private let webServiceAPI: WebServiceAPI
+    private let sleepSoundsGRDB: SleepSoundsGRDB
+
     
     var cancelLable = Set<AnyCancellable>()
     
-    init(webServiceAPI: WebServiceAPI) {
+    init(webServiceAPI: WebServiceAPI, sleepSoundsGRDB: SleepSoundsGRDB) {
         self.webServiceAPI = webServiceAPI
+        self.sleepSoundsGRDB = sleepSoundsGRDB
     }
     
     func getListaDePaquete()-> AnyPublisher<[Paquete], Error> {
@@ -126,4 +130,41 @@ class Repository {
         .eraseToAnyPublisher()
     }
     
+    //BASE DE DATOS
+    
+    func insertarProductoEnBaseDeDatos(idDePaquete: Int, imagen: String, nombre: String, cantidadDeMusica: Int, tiempoDeDuracion:Int, nombreDeCategoria: String) {
+        sleepSoundsGRDB.insertarProductosALaTabla(
+            paqueteId: idDePaquete,
+            imagen: imagen,
+            nombre: nombre,
+            cantidadDeMusica: cantidadDeMusica,
+            tiempoDeDuracion: tiempoDeDuracion,
+            nombreDeCategoria: nombreDeCategoria
+        )
+    }
+    
+    func publicadorDeInsertarProducto() -> AnyPublisher<String,Error>{
+        return sleepSoundsGRDB.publicadorIncertarPaquete
+            .eraseToAnyPublisher()
+    }
+    
+    func llamarListaDeProductosDeBaseDeDatos() {
+        sleepSoundsGRDB.getProductoFromTabla()
+    }
+    
+    func publicadorDeListaDePaquete() -> AnyPublisher<[Paquete],Error> {
+        return sleepSoundsGRDB.publicadorListaDePaquetes.map { (paqueteEntity:[PaqueteEntity]) in
+            paqueteEntity.map { (paqueteEntity:PaqueteEntity) in
+                Paquete(
+                    id: paqueteEntity.paqueteID,
+                    imagen: paqueteEntity.imagen,
+                    nombre: paqueteEntity.nombre,
+                    cantidadDeMusica: paqueteEntity.cantidadDeMusica,
+                    tiempoDeDuracion: paqueteEntity.tiempoDeDuracion,
+                    nombreDeCategoria: paqueteEntity.nombreDeCategoria
+                )
+            }
+        }
+        .eraseToAnyPublisher()
+    }
 }

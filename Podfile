@@ -7,5 +7,6 @@ target 'SleepSoundsApp' do
 
   # Pods for SleepSoundsApp
   pod 'SDWebImageSwiftUI'
+  pod 'GRDB.swift'
 
 end

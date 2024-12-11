@@ -12,7 +12,8 @@ struct DiscoverView: View {
     
     @State private var discoverViewModel = DiscoverViewModel(
         repository: Repository(
-            webServiceAPI: WebServiceAPI()
+            webServiceAPI: WebServiceAPI(),
+            sleepSoundsGRDB: SleepSoundsGRDB()
         )
     )
     
@@ -71,7 +72,7 @@ struct DiscoverView: View {
             )
         }
         .onReceive(discoverViewModel.$discoverUiState) { discoverUiState in
-            switch (discoverUiState) {
+        switch (discoverUiState) {
             case .inicial:
                 break
             case .cargando:
